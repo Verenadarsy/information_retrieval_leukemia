@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IR Leukemia</title>
+</head>
+<body>
+    <h1>Information Retrieval - Leukemia</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Masukkan pertanyaan..." size="50">
+        <button type="submit">Cari</button>
+    </form>
+
+    <h2>Hasil:</h2>
+    {% for r in results %}
+        <p><strong>{{ r.jurnal }}</strong> (score: {{ "%.3f"|format(r.score) }})<br>
+        {{ r.paragraph }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
