@@ -279,14 +279,13 @@
             margin-top: 20px;
             padding-top: 15px;
             border-top: 1px solid #eee;
-            font-size: 0.85rem;
-            color: #666;
         }
 
         .keywords {
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
+            flex: 1;
         }
 
         .keyword {
@@ -295,6 +294,57 @@
             padding: 4px 10px;
             border-radius: 12px;
             font-size: 0.8rem;
+        }
+
+        /* PDF Actions */
+        .pdf-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-pdf {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .btn-view {
+            background: #3949ab;
+            color: white;
+        }
+
+        .btn-view:hover {
+            background: #283593;
+            transform: translateY(-2px);
+        }
+
+        .btn-modal {
+            background: #4caf50;
+            color: white;
+        }
+
+        .btn-modal:hover {
+            background: #388e3c;
+            transform: translateY(-2px);
+        }
+
+        .btn-download {
+            background: #ff9800;
+            color: white;
+        }
+
+        .btn-download:hover {
+            background: #f57c00;
+            transform: translateY(-2px);
         }
 
         /* No Results / Error */
@@ -339,6 +389,76 @@
             text-decoration: none;
         }
 
+        /* Simple PDF Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+        }
+
+        .pdf-modal-content {
+            position: relative;
+            background: white;
+            margin: 2% auto;
+            width: 95%;
+            height: 95vh;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .pdf-modal-header {
+            background: #1a237e;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pdf-modal-header h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .close-modal:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .pdf-modal-body {
+            height: calc(100% - 60px);
+            padding: 0;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .header-content {
@@ -365,6 +485,17 @@
                 gap: 15px;
                 align-items: flex-start;
             }
+
+            .pdf-actions {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .pdf-modal-content {
+                width: 98%;
+                height: 98vh;
+                margin: 1% auto;
+            }
         }
 
         /* Highlighted Text */
@@ -373,6 +504,22 @@
             padding: 2px 4px;
             border-radius: 4px;
             font-weight: 600;
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3949ab;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -388,7 +535,7 @@
                     </div>
                 </div>
                 <div class="system-info">
-                    <p><i class="fas fa-database"></i> {{ papers_count|default('30+') }} Research Papers</p>
+                    <p><i class="fas fa-database"></i> {{ papers_count|default('0') }} Research Papers</p>
                     <p><i class="fas fa-search"></i> TF-IDF + Cosine Similarity</p>
                 </div>
             </div>
@@ -400,11 +547,11 @@
             <h2><i class="fas fa-search"></i> Search Leukemia Research Database</h2>
             <p style="color: #666; margin: 10px 0 20px 0;">Enter your query about leukemia research, diagnosis, treatment, or genetics</p>
 
-            <form method="POST">
+            <form method="POST" id="searchForm">
                 <div class="search-box">
                     <input type="text" name="query" placeholder="e.g., acute myeloid leukemia treatment, FLT3 mutations, stem cell transplantation..."
-                           value="{{ query|default('') }}" required>
-                    <button type="submit">
+                           value="{{ query|default('') }}" required id="searchInput">
+                    <button type="submit" id="searchButton">
                         <i class="fas fa-search"></i> Search
                     </button>
                 </div>
@@ -499,8 +646,36 @@
                     <span class="keyword">treatment</span>
                     {% endif %}
                 </div>
-                <div>
-                    <i class="far fa-clock"></i> Retrieved in real-time
+                
+                <div class="pdf-actions">
+                    {% if r.pdf_filename and r.pdf_filename != 'Unknown' %}
+                    <!-- Open in New Tab -->
+                    <a href="/pdf/{{ r.pdf_filename }}" 
+                       target="_blank" 
+                       class="btn-pdf btn-view"
+                       title="Open PDF in new tab">
+                        <i class="fas fa-external-link-alt"></i> Open PDF
+                    </a>
+                    
+                    <!-- View in Modal -->
+                    <button class="btn-pdf btn-modal" 
+                            onclick="openPDFModal('{{ r.pdf_filename }}')"
+                            title="View PDF in modal">
+                        <i class="fas fa-expand"></i> View Here
+                    </button>
+                    
+                    <!-- Download -->
+                    <a href="/pdf/{{ r.pdf_filename }}" 
+                       class="btn-pdf btn-download"
+                       download="{{ r.pdf_filename }}"
+                       title="Download PDF">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                    {% else %}
+                    <button class="btn-pdf btn-view" disabled style="opacity: 0.5;">
+                        <i class="fas fa-exclamation-circle"></i> PDF Not Available
+                    </button>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -516,14 +691,27 @@
         {% endif %}
     </div>
 
+    <!-- Simple PDF Modal -->
+    <div id="pdfModal" class="modal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <h3><i class="fas fa-file-pdf"></i> <span id="pdfTitle">PDF Viewer</span></h3>
+                <button class="close-modal" onclick="closePDFModal()">&times;</button>
+            </div>
+            <div class="pdf-modal-body">
+                <iframe id="pdfFrame" class="pdf-frame" src=""></iframe>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <p><strong>Leukemia Research Information Retrieval System</strong></p>
             <p>IFB-307 Data Mining & Information Retrieval | Institut Teknologi Nasional</p>
             <div class="footer-links">
-                <a href="#"><i class="fas fa-info-circle"></i> About This System</a>
-                <a href="#"><i class="fas fa-code"></i> Technical Details</a>
-                <a href="/manage-pdf"><i class="fas fa-database"></i> Dataset Info</a>
+                <a href="#" onclick="showAbout()"><i class="fas fa-info-circle"></i> About</a>
+                <a href="/manage-pdf"><i class="fas fa-database"></i> Manage PDFs</a>
+                <a href="#" onclick="showTechInfo()"><i class="fas fa-code"></i> Tech Info</a>
             </div>
             <p style="margin-top: 20px; font-size: 0.8rem; color: #999;">
                 TF-IDF Vectorization • Cosine Similarity • Text Preprocessing • Python Flask Backend
@@ -534,7 +722,8 @@
     <script>
         // Function to set query from quick tips
         function setQuery(text) {
-            document.querySelector('input[name="query"]').value = text;
+            document.getElementById('searchInput').value = text;
+            document.getElementById('searchInput').focus();
         }
 
         // Function to sort results
@@ -566,28 +755,138 @@
             });
         }
 
-        // Auto-expand search box on focus
-        document.querySelector('input[name="query"]').addEventListener('focus', function() {
-            this.style.boxShadow = '0 0 0 3px rgba(57, 73, 171, 0.2)';
-        });
-
-        document.querySelector('input[name="query"]').addEventListener('blur', function() {
-            this.style.boxShadow = 'none';
-        });
-
         // Show loading state on form submit
-        document.querySelector('form').addEventListener('submit', function() {
-            const button = this.querySelector('button');
+        document.getElementById('searchForm').addEventListener('submit', function(e) {
+            const button = document.getElementById('searchButton');
             const originalText = button.innerHTML;
-            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Searching...';
+            button.innerHTML = '<div class="loading"></div> Searching...';
             button.disabled = true;
-
-            // Reset button after 5 seconds (in case of error)
+            
+            // Auto scroll to results
             setTimeout(() => {
-                button.innerHTML = originalText;
-                button.disabled = false;
-            }, 5000);
+                if (window.location.hash !== '#results') {
+                    window.location.hash = '#results';
+                }
+            }, 100);
         });
+
+        // PDF Modal Functions
+        function openPDFModal(filename) {
+            if (!filename || filename === 'Unknown') {
+                alert('PDF source not available for this document.');
+                return;
+            }
+            
+            const modal = document.getElementById('pdfModal');
+            const frame = document.getElementById('pdfFrame');
+            const title = document.getElementById('pdfTitle');
+            
+            // Set PDF URL with cache busting
+            const timestamp = new Date().getTime();
+            frame.src = `/pdf/${filename}?t=${timestamp}`;
+            title.textContent = filename;
+            
+            // Show modal
+            modal.style.display = 'block';
+            
+            // Prevent body scrolling
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePDFModal() {
+            const modal = document.getElementById('pdfModal');
+            const frame = document.getElementById('pdfFrame');
+            
+            // Hide modal
+            modal.style.display = 'none';
+            
+            // Clear frame source
+            frame.src = '';
+            
+            // Restore scrolling
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('pdfModal');
+            if (event.target === modal) {
+                closePDFModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closePDFModal();
+            }
+        });
+
+        // Auto-expand/collapse paragraphs
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.full-text summary').forEach(summary => {
+                summary.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    if (this.parentElement.open) {
+                        icon.className = 'fas fa-chevron-down';
+                    } else {
+                        icon.className = 'fas fa-chevron-up';
+                    }
+                });
+            });
+
+            // Highlight search terms if there's a query
+            const query = "{{ query|safe }}";
+            if (query && query.trim() !== '') {
+                highlightSearchTerms(query);
+            }
+            
+            // Add smooth scrolling for results anchor
+            if (window.location.hash === '#results') {
+                setTimeout(() => {
+                    const resultsHeader = document.querySelector('.results-header');
+                    if (resultsHeader) {
+                        resultsHeader.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 100);
+            }
+        });
+
+        // Highlight search terms in results
+        function highlightSearchTerms(query) {
+            const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 2);
+            if (searchTerms.length === 0) return;
+            
+            document.querySelectorAll('.text-content, .summary p').forEach(element => {
+                let html = element.innerHTML;
+                searchTerms.forEach(term => {
+                    const regex = new RegExp(`(${term})`, 'gi');
+                    html = html.replace(regex, '<mark>$1</mark>');
+                });
+                element.innerHTML = html;
+            });
+        }
+
+        // Info functions
+        function showAbout() {
+            alert('Leukemia Research Information Retrieval System\n\n' +
+                  'This system helps researchers find relevant leukemia research papers ' +
+                  'using TF-IDF and cosine similarity algorithms.');
+            return false;
+        }
+
+        function showTechInfo() {
+            alert('Technical Information:\n\n' +
+                  '• Backend: Python Flask\n' +
+                  '• Search Algorithm: TF-IDF + Cosine Similarity\n' +
+                  '• Text Processing: NLTK, scikit-learn\n' +
+                  '• PDF Processing: PyPDF2\n' +
+                  '• Indexing: Auto-reindex on PDF upload');
+            return false;
+        }
+
+        // Focus search input on page load
+        document.getElementById('searchInput').focus();
     </script>
 </body>
 </html>

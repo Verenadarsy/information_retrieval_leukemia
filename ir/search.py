@@ -67,7 +67,7 @@ def highlight_text(text, query):
     return highlighted
 
 
-def search(query, top_k=3):
+def search(query, top_k=50):  # Changed from 3 to 50
     tfidf_matrix, vectorizer, paragraphs = load_index()
 
     if tfidf_matrix is None:
@@ -85,7 +85,7 @@ def search(query, top_k=3):
     ][:top_k]
 
     results = []
-    for idx in ranked_idx:
+    for rank, idx in enumerate(ranked_idx):
         para = paragraphs[idx]["paragraph"]
 
         results.append({
@@ -94,7 +94,8 @@ def search(query, top_k=3):
                 summarize_paragraph(para, vectorizer), query
             ),
             "jurnal": paragraphs[idx]["jurnal"],
-            "score": float(similarities[idx])
+            "score": float(similarities[idx]),
+            "rank": rank + 1  # Add rank number
         })
 
     return results
@@ -108,5 +109,6 @@ if __name__ == "__main__":
         print("\n=== HASIL PENCARIAN ===")
         print("Jurnal :", r["jurnal"])
         print("Score  :", r["score"])
+        print("Rank   :", r["rank"])
         print("Ringkasan:")
         print(r["summary"])
