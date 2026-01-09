@@ -5,7 +5,7 @@ from ir.preprocessing import preprocess
 from nltk.tokenize import sent_tokenize
 import nltk
 import re
-
+import os
 
 nltk.download("punkt")
 
@@ -13,38 +13,42 @@ TFIDF_FILE = "index/tfidf_matrix.pkl"
 VECTORIZER_FILE = "index/vectorizer.pkl"
 PARAGRAPH_FILE = "processed/paragraphs.json"
 
-# Load index
-with open(TFIDF_FILE, "rb") as f:
-    tfidf_matrix = pickle.load(f)
 
-with open(VECTORIZER_FILE, "rb") as f:
-    vectorizer = pickle.load(f)
+def load_index():
+    """
+    🔥 WAJIB load ulang setiap search
+    """
+    if not os.path.exists(TFIDF_FILE):
+        return None, None, None
 
-with open(PARAGRAPH_FILE, "r", encoding="utf-8") as f:
-    paragraphs = json.load(f)
+    with open(TFIDF_FILE, "rb") as f:
+        tfidf_matrix = pickle.load(f)
+
+    with open(VECTORIZER_FILE, "rb") as f:
+        vectorizer = pickle.load(f)
+
+    with open(PARAGRAPH_FILE, "r", encoding="utf-8") as f:
+        paragraphs = json.load(f)
+
+    return tfidf_matrix, vectorizer, paragraphs
 
 
-
-def summarize_paragraph(paragraph, n_sentences=2):
+def summarize_paragraph(paragraph, vectorizer, n_sentences=2):
     sentences = sent_tokenize(paragraph)
 
     if len(sentences) <= n_sentences:
         return paragraph
 
-    # TF-IDF tiap kalimat
     sentence_vectors = vectorizer.transform(
         [preprocess(s) for s in sentences]
     )
 
-    # skor = total bobot tf-idf
     scores = sentence_vectors.sum(axis=1).A1
-
-    # ambil kalimat terbaik
     top_idx = scores.argsort()[::-1][:n_sentences]
     top_idx = sorted(top_idx)
 
-    summary = " ".join([sentences[i] for i in top_idx])
-    return summary
+    return " ".join([sentences[i] for i in top_idx])
+
 
 def highlight_text(text, query):
     keywords = preprocess(query).split()
@@ -63,22 +67,34 @@ def highlight_text(text, query):
     return highlighted
 
 
-def search(query, top_k=1):
+def search(query, top_k=3):
+    tfidf_matrix, vectorizer, paragraphs = load_index()
+
+    if tfidf_matrix is None:
+        return []
+
     query_processed = preprocess(query)
     query_vec = vectorizer.transform([query_processed])
 
-    similarities = cosine_similarity(query_vec, tfidf_matrix)
-    top_idx = similarities[0].argsort()[::-1][:top_k]
+    similarities = cosine_similarity(query_vec, tfidf_matrix)[0]
+
+    # 🔥 FILTER YANG SCORE 0
+    ranked_idx = [
+        i for i in similarities.argsort()[::-1]
+        if similarities[i] > 0
+    ][:top_k]
 
     results = []
-    for idx in top_idx:
+    for idx in ranked_idx:
         para = paragraphs[idx]["paragraph"]
 
         results.append({
             "paragraph": highlight_text(para, query),
-            "summary": highlight_text(summarize_paragraph(para), query),
+            "summary": highlight_text(
+                summarize_paragraph(para, vectorizer), query
+            ),
             "jurnal": paragraphs[idx]["jurnal"],
-            "score": float(similarities[0][idx])
+            "score": float(similarities[idx])
         })
 
     return results
@@ -86,11 +102,11 @@ def search(query, top_k=1):
 
 if __name__ == "__main__":
     q = input("Masukkan pertanyaan: ")
-    res = search(q, top_k=1)
+    res = search(q)
 
     for r in res:
         print("\n=== HASIL PENCARIAN ===")
-        print(f"Jurnal : {r['jurnal']}")
-        print(f"Score  : {r['score']:.3f}")
+        print("Jurnal :", r["jurnal"])
+        print("Score  :", r["score"])
         print("Ringkasan:")
         print(r["summary"])

@@ -1,27 +1,47 @@
 from flask import Flask, render_template, request, redirect, send_file
 from ir.search import search
 import os
+import sys
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
+# =========================
+# CONFIG
+# =========================
 PDF_FOLDER = "dataset/jurnal"
 ALLOWED_EXTENSIONS = {"pdf"}
 
 os.makedirs(PDF_FOLDER, exist_ok=True)
 
+# =========================
+# HELPER
+# =========================
 def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
+def run_pipeline():
+    """
+    WAJIB pakai python yang sama dengan Flask
+    """
+    python = sys.executable
+    os.system(f'"{python}" ir/pdf_reader.py')
+    os.system(f'"{python}" ir/preprocessing.py')
+    os.system(f'"{python}" ir/indexing.py')
+
+
+# =========================
+# ROUTE: SEARCH
+# =========================
 @app.route("/", methods=["GET", "POST"])
 def index():
     results = []
-    query = ""   # 🔥 FIX ERROR KAMU (biar GET ga error)
+    query = ""
 
     if request.method == "POST":
-        query = request.form.get("query")
-        if query:
+        query = request.form.get("query", "")
+        if query.strip():
             results = search(query, top_k=3)
 
     return render_template(
@@ -31,12 +51,18 @@ def index():
     )
 
 
+# =========================
+# ROUTE: MANAGE PDF
+# =========================
 @app.route("/manage-pdf")
 def manage_pdf():
-    files = os.listdir(PDF_FOLDER)
+    files = sorted(os.listdir(PDF_FOLDER))
     return render_template("manage_pdf.html", files=files)
 
 
+# =========================
+# ROUTE: UPLOAD
+# =========================
 @app.route("/upload-pdf", methods=["POST"])
 def upload_pdf():
     if "pdf" not in request.files:
@@ -49,17 +75,17 @@ def upload_pdf():
 
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
-        save_path = os.path.join(PDF_FOLDER, filename)
-        file.save(save_path)
+        file.save(os.path.join(PDF_FOLDER, filename))
 
-        # AUTO PIPELINE
-        os.system("python ir/pdf_reader.py")
-        os.system("python ir/preprocessing.py")
-        os.system("python ir/indexing.py")
+        # 🔥 AUTO PIPELINE (FIX)
+        run_pipeline()
 
     return redirect("/manage-pdf")
 
 
+# =========================
+# ROUTE: DELETE
+# =========================
 @app.route("/delete-pdf/<filename>", methods=["POST"])
 def delete_pdf(filename):
     path = os.path.join(PDF_FOLDER, filename)
@@ -67,14 +93,15 @@ def delete_pdf(filename):
     if os.path.exists(path):
         os.remove(path)
 
-        # AUTO PIPELINE
-        os.system("python ir/pdf_reader.py")
-        os.system("python ir/preprocessing.py")
-        os.system("python ir/indexing.py")
+        # 🔥 AUTO PIPELINE (FIX)
+        run_pipeline()
 
     return redirect("/manage-pdf")
 
 
+# =========================
+# ROUTE: VIEW
+# =========================
 @app.route("/view-pdf")
 def view_pdf():
     filename = request.args.get("file")
@@ -92,5 +119,8 @@ def view_pdf():
     )
 
 
+# =========================
+# RUN
+# =========================
 if __name__ == "__main__":
     app.run(debug=True)
