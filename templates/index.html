@@ -346,20 +346,20 @@
                 text-align: center;
                 gap: 15px;
             }
-            
+
             .search-box {
                 flex-direction: column;
             }
-            
+
             .search-box button {
                 padding: 16px;
             }
-            
+
             .result-header {
                 flex-direction: column;
                 gap: 15px;
             }
-            
+
             .result-footer {
                 flex-direction: column;
                 gap: 15px;
@@ -391,16 +391,16 @@
         <div class="search-section">
             <h2><i class="fas fa-search"></i> Search Leukemia Research Database</h2>
             <p style="color: #666; margin: 10px 0 20px 0;">Enter your query about leukemia research, diagnosis, treatment, or genetics</p>
-            
+
             <form method="POST">
                 <div class="search-box">
-                    <input type="text" name="query" placeholder="e.g., acute myeloid leukemia treatment, FLT3 mutations, stem cell transplantation..." 
+                    <input type="text" name="query" placeholder="e.g., acute myeloid leukemia treatment, FLT3 mutations, stem cell transplantation..."
                            value="{{ query|default('') }}" required>
                     <button type="submit">
                         <i class="fas fa-search"></i> Search
                     </button>
                 </div>
-                
+
                 <div class="search-tips">
                     <div class="search-tip" onclick="setQuery('acute myeloid leukemia diagnosis')">AML Diagnosis</div>
                     <div class="search-tip" onclick="setQuery('stem cell transplantation leukemia')">Stem Cell Transplant</div>
@@ -468,7 +468,7 @@
                     <p>{{ r.summary }}</p>
                 </div>
                 {% endif %}
-                
+
                 <div class="full-text">
                     <summary>
                         <i class="fas fa-chevron-down"></i> View Full Paragraph ({{ r.paragraph|length }} characters)
@@ -515,7 +515,7 @@
             <div class="footer-links">
                 <a href="#"><i class="fas fa-info-circle"></i> About This System</a>
                 <a href="#"><i class="fas fa-code"></i> Technical Details</a>
-                <a href="#"><i class="fas fa-database"></i> Dataset Info</a>
+                <a href="/manage-pdf"><i class="fas fa-database"></i> Dataset Info</a>
             </div>
             <p style="margin-top: 20px; font-size: 0.8rem; color: #999;">
                 TF-IDF Vectorization • Cosine Similarity • Text Preprocessing • Python Flask Backend
@@ -533,7 +533,7 @@
         function sortResults(criteria) {
             const container = document.querySelector('.container');
             const cards = Array.from(document.querySelectorAll('.result-card'));
-            
+
             cards.sort((a, b) => {
                 if (criteria === 'score') {
                     return parseFloat(b.dataset.score) - parseFloat(a.dataset.score);
@@ -542,17 +542,17 @@
                 }
                 return 0;
             });
-            
+
             // Reorder cards in container
             cards.forEach(card => {
                 container.appendChild(card);
             });
-            
+
             // Update rank numbers
             document.querySelectorAll('.rank-badge').forEach((badge, index) => {
                 badge.textContent = '#' + (index + 1);
             });
-            
+
             document.querySelectorAll('.result-title h3').forEach((title, index) => {
                 title.textContent = 'Result ' + (index + 1);
             });
@@ -573,7 +573,7 @@
             const originalText = button.innerHTML;
             button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Searching...';
             button.disabled = true;
-            
+
             // Reset button after 5 seconds (in case of error)
             setTimeout(() => {
                 button.innerHTML = originalText;

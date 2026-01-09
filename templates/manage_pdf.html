@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage PDF</title>
+</head>
+<body>
+
+<h1>Manage Jurnal PDF</h1>
+
+<!-- UPLOAD -->
+<form action="/upload-pdf" method="POST" enctype="multipart/form-data">
+    <input type="file" name="pdf" accept=".pdf" required>
+    <button type="submit">Upload PDF</button>
+</form>
+
+<hr>
+
+<h2>Daftar PDF</h2>
+
+<ul>
+{% for f in files %}
+    <li>
+        {{ f }}
+        |
+        <a href="/view-pdf?file={{ f }}" target="_blank">View</a>
+        |
+        <form action="/delete-pdf/{{ f }}" method="post" style="display:inline;">
+        <button type="submit" onclick="return confirm('Yakin hapus?')">
+            Delete
+        </button>
+    </form>
+    </li>
+{% endfor %}
+</ul>
+
+<br>
+<a href="/">⬅ Kembali ke Search</a>
+
+</body>
+</html>
