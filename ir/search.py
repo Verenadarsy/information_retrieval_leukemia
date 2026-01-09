@@ -1,7 +1,7 @@
 import json
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
-from preprocessing import preprocess
+from ir.preprocessing import preprocess
 from nltk.tokenize import sent_tokenize
 import nltk
 
