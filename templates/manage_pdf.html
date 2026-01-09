@@ -1,40 +1,440 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Manage PDF</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage PDF Database | Leukemia Research IR System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Header */
+        .page-header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px 12px 0 0;
+            margin: -30px -30px 30px -30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .page-header i {
+            font-size: 2rem;
+            color: #64b5f6;
+        }
+
+        .page-header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .back-button {
+            margin-bottom: 25px;
+        }
+
+        .back-button a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #3949ab;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            background: #e8eaf6;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .back-button a:hover {
+            background: #3949ab;
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        /* Upload Section */
+        .upload-section {
+            background: #f9f9ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            border: 2px dashed #c5cae9;
+        }
+
+        .upload-section h2 {
+            color: #1a237e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .upload-form {
+            display: flex;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        .file-input-wrapper {
+            flex: 1;
+        }
+
+        .file-input-wrapper label {
+            display: block;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .file-input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background: white;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .file-input:focus {
+            outline: none;
+            border-color: #3949ab;
+            box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.1);
+        }
+
+        .upload-btn {
+            background: linear-gradient(135deg, #3949ab 0%, #283593 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            height: 48px;
+        }
+
+        .upload-btn:hover {
+            background: linear-gradient(135deg, #283593 0%, #1a237e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(57, 73, 171, 0.2);
+        }
+
+        /* Files List */
+        .files-section {
+            margin-top: 40px;
+        }
+
+        .files-section h2 {
+            color: #1a237e;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .files-count {
+            background: #e8eaf6;
+            color: #3949ab;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .files-list {
+            list-style: none;
+        }
+
+        .file-item {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .file-item:hover {
+            border-color: #3949ab;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .file-icon {
+            color: #d32f2f;
+            font-size: 1.5rem;
+        }
+
+        .file-name {
+            font-weight: 600;
+            color: #333;
+            max-width: 400px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .file-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .view-btn {
+            background: #e3f2fd;
+            color: #1565c0;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s;
+        }
+
+        .view-btn:hover {
+            background: #1565c0;
+            color: white;
+        }
+
+        .delete-form {
+            display: inline;
+        }
+
+        .delete-btn {
+            background: #ffebee;
+            color: #d32f2f;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s;
+        }
+
+        .delete-btn:hover {
+            background: #d32f2f;
+            color: white;
+        }
+
+        /* No Files */
+        .no-files {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .no-files i {
+            font-size: 3rem;
+            color: #bdbdbd;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .page-footer {
+            text-align: center;
+            padding: 30px 0 10px 0;
+            margin-top: 40px;
+            color: #666;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .upload-form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .upload-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .file-item {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+
+            .file-actions {
+                align-self: flex-end;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="page-header">
+            <i class="fas fa-database"></i>
+            <div>
+                <h1>Manage PDF Database</h1>
+                <p>Upload, view, and manage leukemia research PDFs</p>
+            </div>
+        </div>
 
-<h1>Manage Jurnal PDF</h1>
+        <div class="back-button">
+            <a href="/">
+                <i class="fas fa-arrow-left"></i>
+                Back to Search
+            </a>
+        </div>
 
-<!-- UPLOAD -->
-<form action="/upload-pdf" method="POST" enctype="multipart/form-data">
-    <input type="file" name="pdf" accept=".pdf" required>
-    <button type="submit">Upload PDF</button>
-</form>
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h2><i class="fas fa-cloud-upload-alt"></i> Upload New Research PDF</h2>
+            <p style="color: #666; margin-bottom: 20px;">Upload PDF files containing leukemia research papers</p>
+            
+            <form action="/upload-pdf" method="POST" enctype="multipart/form-data" class="upload-form">
+                <div class="file-input-wrapper">
+                    <label for="pdf-file"><i class="fas fa-file-pdf"></i> Select PDF File</label>
+                    <input type="file" id="pdf-file" name="pdf" accept=".pdf" required class="file-input">
+                </div>
+                <button type="submit" class="upload-btn">
+                    <i class="fas fa-upload"></i>
+                    Upload PDF
+                </button>
+            </form>
+            
+            <div style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                <i class="fas fa-info-circle"></i>
+                Max file size: 10MB • Supported: PDF only
+            </div>
+        </div>
 
-<hr>
+        <!-- Files List -->
+        <div class="files-section">
+            <h2>
+                <i class="fas fa-list-alt"></i>
+                PDF Database
+                {% if files %}
+                <span class="files-count">{{ files|length }} files</span>
+                {% endif %}
+            </h2>
 
-<h2>Daftar PDF</h2>
+            {% if files %}
+            <ul class="files-list">
+                {% for f in files %}
+                <li class="file-item">
+                    <div class="file-info">
+                        <i class="fas fa-file-pdf file-icon"></i>
+                        <div>
+                            <div class="file-name">{{ f }}</div>
+                            <div style="font-size: 0.85rem; color: #666; margin-top: 5px;">
+                                <i class="far fa-clock"></i> Uploaded • 
+                                <i class="fas fa-file-alt"></i> PDF Document
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="/view-pdf?file={{ f }}" target="_blank" class="view-btn">
+                            <i class="fas fa-eye"></i>
+                            View
+                        </a>
+                        <form action="/delete-pdf/{{ f }}" method="post" class="delete-form">
+                            <button type="submit" class="delete-btn" 
+                                    onclick="return confirm('Are you sure you want to delete \"{{ f }}\"? This action cannot be undone.')">
+                                <i class="fas fa-trash"></i>
+                                Delete
+                            </button>
+                        </form>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <div class="no-files">
+                <i class="fas fa-folder-open"></i>
+                <h3>No PDF files found</h3>
+                <p>Upload your first leukemia research PDF using the form above.</p>
+                <p style="margin-top: 10px; color: #999;">The system will automatically process and index the content.</p>
+            </div>
+            {% endif %}
+        </div>
 
-<ul>
-{% for f in files %}
-    <li>
-        {{ f }}
-        |
-        <a href="/view-pdf?file={{ f }}" target="_blank">View</a>
-        |
-        <form action="/delete-pdf/{{ f }}" method="post" style="display:inline;">
-        <button type="submit" onclick="return confirm('Yakin hapus?')">
-            Delete
-        </button>
-    </form>
-    </li>
-{% endfor %}
-</ul>
+        <div class="page-footer">
+            <p><strong>Leukemia Research Information Retrieval System</strong></p>
+            <p>PDF Management • IFB-307 Data Mining & Information Retrieval</p>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #999;">
+                <i class="fas fa-exclamation-triangle"></i>
+                Deleting PDFs will remove them from the search database
+            </p>
+        </div>
+    </div>
 
-<br>
-<a href="/">⬅ Kembali ke Search</a>
+    <script>
+        // File input styling
+        const fileInput = document.getElementById('pdf-file');
+        fileInput.addEventListener('change', function() {
+            const fileName = this.files[0]?.name || 'No file chosen';
+            const label = this.previousElementSibling;
+            label.innerHTML = `<i class="fas fa-file-pdf"></i> ${fileName}`;
+        });
 
+        // Form submission loading
+        document.querySelector('.upload-form').addEventListener('submit', function() {
+            const button = this.querySelector('.upload-btn');
+            const originalText = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Uploading...';
+            button.disabled = true;
+
+            setTimeout(() => {
+                button.innerHTML = originalText;
+                button.disabled = false;
+            }, 5000);
+        });
+
+        // Hover effects for delete button
+        document.querySelectorAll('.delete-btn').forEach(btn => {
+            btn.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            btn.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
 </body>
 </html>
