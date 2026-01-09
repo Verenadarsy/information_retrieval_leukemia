@@ -4,6 +4,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from ir.preprocessing import preprocess
 from nltk.tokenize import sent_tokenize
 import nltk
+import re
+
 
 nltk.download("punkt")
 
@@ -44,6 +46,22 @@ def summarize_paragraph(paragraph, n_sentences=2):
     summary = " ".join([sentences[i] for i in top_idx])
     return summary
 
+def highlight_text(text, query):
+    keywords = preprocess(query).split()
+    highlighted = text
+
+    for kw in set(keywords):
+        if len(kw) < 3:
+            continue
+        highlighted = re.sub(
+            rf"\b({re.escape(kw)})\b",
+            r"<mark>\1</mark>",
+            highlighted,
+            flags=re.IGNORECASE
+        )
+
+    return highlighted
+
 
 def search(query, top_k=1):
     query_processed = preprocess(query)
@@ -57,8 +75,8 @@ def search(query, top_k=1):
         para = paragraphs[idx]["paragraph"]
 
         results.append({
-            "paragraph": para,
-            "summary": summarize_paragraph(para),
+            "paragraph": highlight_text(para, query),
+            "summary": highlight_text(summarize_paragraph(para), query),
             "jurnal": paragraphs[idx]["jurnal"],
             "score": float(similarities[0][idx])
         })

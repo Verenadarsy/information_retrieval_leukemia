@@ -1137,1010 +1137,740 @@
   {
     "id": 228,
     "paragraph": "Abstract: Chromosomal rearrangements of the mixed lineage leukaemia (MLL, also known as KMT2A)\ngene on chromosome 11q23 are amongst the most common genetic abnormalities observed in human\nacute leukaemias. MLL rearrangements (MLLr) are the most common cytogenetic abnormalities\nin infant and childhood acute myeloid leukaemia (AML) and acute lymphocytic leukaemia (ALL)\nand do not normally acquire secondary mutations compared to other leukaemias. To model these\nleukaemias, we have used clustered regularly interspaced short palindromic repeats (CRISPR)/Cas9\ngene editing to induce MLL-AF9 (MA9) chromosomal rearrangements in murine hematopoietic\nstem and progenitor cell lines and primary cells. By utilizing a dual-single guide RNA (sgRNA)\napproach targeting the breakpoint cluster region of murine Mll and Af9 equivalent to that in human\nMA9 rearrangements, we show eﬃcient de novo generation of MA9 fusion product at the DNA\nand RNA levels in the bulk population. The leukaemic features of MA9-induced disease were\nobserved including increased clonogenicity, enrichment of c-Kit-positive leukaemic stem cells and\nincreased MA9 target gene expression. This approach provided a rapid and reliable means of de\nnovo generation of Mll-Af9 genetic rearrangements in murine haematopoietic stem and progenitor\ncells (HSPCs), using CRISPR/Cas9 technology to produce a cellular model of MA9 leukaemias which\nfaithfully reproduces many features of the human disease in vitro.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 229,
     "paragraph": "Rearrangements of the mixed lineage leukaemia gene (MLLr) are the most common cytogenetic\nabnormalities found in infant and childhood acute lymphocytic leukaemia (ALL) and acute myeloid\nleukaemia (AML) [1] and are found in 80% and 35–50% of all paediatric ALL and AML cases\nrespectively [1]. These leukaemias do not typically acquire many secondary mutations [2] and are\nthought to result from inappropriate repair of DNA double strand breaks (DSBs) via nonhomologous\nend joining (NHEJ) in haematopoietic cells [3]. As the 8.3-kb breakpoint cluster region of mixed\nlineage leukaemia (MLL) is located between exons 8 and 13 for almost all MLLr cases [4], these fusion\ngenes contain the ﬁrst 8–13 exons of MLL and a variable number of exons from the fusion partner\ngenes (FPGs). Up to 135 MLL FPGs have been identiﬁed and are well described elsewhere [5–7].",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 230,
     "paragraph": "These include cytoplasmic proteins (AF6, GAS7 and EEN), septins (SEPT2, SEPT5, SEPT6, SEPT9\nand SEPT11) and histone acetyltransferases (CBP and P300) as well as the largest subset, the nuclear\nproteins. This category contains the most common FPGs such as ENL, ELL, AF4, AF9 and AF10,\nwhich account for approximately 80% of all MLL fusions [5]. Of these, MLL-AF9 (MA9) t(9;11)(p22;q23)\ntranslocations are found in 30% of MLLr AML cases [5] irrespective of age and are commonly found in\na subset of adult patients with therapy-related AML [8].",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 231,
     "paragraph": "Although the precise functional properties of AF9 are unknown, it has been demonstrated to\nform multimer complexes with members of the polycomb repressive complex 1 (PRC1) complex\nand disruptor of telomere silencing (DOT1L) via a conserved ANC1 homology domain (AHD),\nindicating a role in transcriptional regulation [9,10]. These properties appear to play a critical role in\nleukaemic transformation [11,12]. Oncogenic properties of MLL fusion proteins include interference\nwith transcriptional elongation, resulting in dysregulation of target genes [13,14]. Aberrant expression\nof MLL target genes is strongly dependent on DOT1L-mediated H3K79 methylation [15], which is\na critical requirement for MA9 leukaemogensis [16]. Members of the Homeobox (HOX) family are\ncommonly overexpressed in MLLr leukaemias as a direct target of MLL fusion proteins [4,17]. The HOX\nfamily are critical factors in the self-renewing properties of haematopoietic stem cells (HSCs) and their\noverexpression results in a diﬀerentiation block and an increase in self-renewal of immature myeloid\nprogenitor cells. The HOX cofactors MEIS1 [18,19] and PBX3 [20] are also direct targets of MLL fusion\nproteins [21] frequently found upregulated in coordination with HOX targets. Importantly, there is\nevidence to suggest that MA9-mediated leukaemia can progress even in the absence of HOX genes\nsuch as HOXA9 [22], indicating an important role of non-HOX family genes. This includes CDK6 [23],\nEVI-1 [24,25] and EYA1 [26,27], which are also found upregulated in MLLr leukaemias as a result of\ndirect binding of MLL-FPG proteins to gene promoters [26,28,29], and play a vital role in leukaemic\ntransformation including cellular immortalization [26], hyperproliferation [23,24], chemoresistance [24]\nand dysregulated self-renewal [25,27]. CDK6 speciﬁcally has been highlighted as a critical eﬀector of\nMLLr leukemogenesis as its depletion in mice with MA9-driven AML was shown to overcome the\nmyeloid diﬀerentiation block and to prolong survival in vivo [29].",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 232,
     "paragraph": "Numerous murine models of MLLr have been generated and have each oﬀered valuable insights.\nLimitations with murine models are in large part due to the technology used to mimic MLL chromosomal\nrearrangements. An early knock-in model [30] utilized homologous recombination (HR) to generate\nan Mll-Af9 fusion gene and displayed a myeloproliferative disorder (MPD), leading primarily to AML\ncharacterized by expansion of immature myeloid populations with a small percentage developing\nB-cell ALL (B-ALL) [31]; thus, this model resembles the phenotypic heterogeneity of MLLr leukaemias,\nwhich can manifest as AML; ALL; or in a minority of cases, mixed phenotype acute leukaemia (MPAL).\nHowever, this system lacked tissue-speciﬁc control of MA9 expression throughout development and\nmice were prone to developmental defects as a result of heterozygosity for wild type (WT) Mll [32].\nTo gain more insight into cell-type speciﬁc eﬀects, a subsequent approach involved enrichment of\nhaematopoietic populations from these HR-generated MA9 knock-in mice, followed by secondary\ntransplantation into WT recipients [33]. This also demonstrated eﬃcient generation of AML, especially\nwhen Lin−Sca-1+c-Kit+ (LSK) cells, which include HSCs and haematopoietic stem and progenitor\n(HSPCs), were transplanted. An advantage of these methods is the expression of the MA9 transgene from\nthe endogenous Mll promoter, which results in physiological transgene expression levels. This model\ncannot however address the leukaemia stem cell origin with respect to de novo AML initiation.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 233,
     "paragraph": "Translocator models utilizing the Cre-loxP system have generated MA9 translocations via loxP\nsites inserted into those intronic regions of endogenous Mll and Af9 genes where breakpoints are\nmost frequently found in human MLLr patients [34]. Using Lmo2-Cre to express Cre recombinase,\nMll-Af9 was generated in pluripotent stem cells and led exclusively to myeloid leukaemia whereas\nT-cell-restricted expression using lck-Cre did not lead to leukomogeneis [35]. The advantage of\nthis Cre-loxP system is that MA9 expression can be driven by lineage-restricted promoters from\nthe endogenous loci [35], reﬂecting physiological expression. Further models targeting Mll-Af9",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 234,
     "paragraph": "expression to speciﬁc cells within the haematopoietic system have utilized retrovirus-driven expression\nfollowed by transduction and transplantation approaches. These methods beneﬁt from its speed\nand ease of use [36,37] and has led to the identiﬁcation of both the HSC and the granulocyte and\nmacrophage progenitor (GMP) as potential leukaemic stem cells-of-origin with divergent clinical\nfeatures [38]. Retrovirus-mediated expression models however drive transgene expressions that\nare not physiological. To gain greater control over the level of cell-restricted transgene expression,\nDox-inducible transgenic models have since been developed [39,40] enabling close-to-physiological\nlevels and reversible transgene expression in a Dox dose-dependent manner. Using this model, it was\ndemonstrated that long-term HSC (LT-HSC) populations result in an invasive and chemoresistant AML\nwith a primitive progenitor phenotype and a distinct stemness-related gene expression pattern [39].\nDox-inducible transgene expression is however not controlled by an endogenous promoter. “Leaky” Cre\nexpression from tissue-speciﬁc promoters together with the expensive and time-consuming nature of\ntissue-restricted strain generation are major limitations with the Cre-loxP and Dox-inducible transgenic\nmodel systems. More recent attempts to circumvent some of the issues highlighted above have utilized\ntranscription activator like eﬀector nucleases (TALEN) technology to generate endogenous MA9 [41,42].\nThese cells exhibited a signiﬁcantly higher clonogenic potential with colony morphologies consistent\nwith an immature cell type and development of AML, ALL and MPAL upon xenotransplantation [41].\nClustered regularly interspaced short palindromic repeats (CRISPR)/Cas9 technology facilitates\ncreation of DSBs at almost any genomic sequence of interest technology and has revolutionised the\nway in which we are able to manipulate the genome, aﬀording a more ﬂexible and readily applicable\nmethod for generating novel disease models, including chromosomal translocations, with an ease and\nsimplicity far outweighing prior technologies such as TALEN and Cre-LoxP. CRISPR technology has\nfacilitated generation of chromosomal deletions [43] and rearrangements, including inversions [44] and\ntranslocations [45–48]. Here, we demonstrate eﬃcient CRISPR-mediated generation of an endogenous\nMll-Af9 reciprocal translocation in a murine cell line and primary HSPCs. By utilizing a dual-single\nguide RNA (sgRNA) approach to target the most common breakpoints in human MA9 rearrangements,\nwe show rapid, reliable generation of simultaneous breakpoints and a fusion product at the DNA\nand RNA levels. The resultant transformed cells reliably recapitulated features of human MLLr\nleukaemias. These include increased expression of MA9 target genes, reduced IL3 dependency,\nhigher clonogenic potential and self-renewal in primary murine HSPCs. This multiplexed CRISPR\ntechnology oﬀers a robust and malleable approach for generating murine models of the multitude of\nhuman translocation-associated leukaemias.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 235,
     "paragraph": "Herein, we have demonstrated generation of a de novo MA9 translocation in murine HSPCs using\nstate-of-the-art CRISPR/Cas9 technology to create a novel murine leukaemia model which faithfully\nrecapitulates multiple features of human MA9 leukaemia. By rational design of sgRNA ﬂanking\nbreakpoint regions with common occurrence in MLLr AML patients and prior MA9 transgenic models,\nwe identiﬁed optimal combinations of sgRNA sequences with which to induce simultaneous DSBs\nat the speciﬁc loci. Each guide was validated for individual cleavage eﬃciency, and subsequently,\noptimal combinations were identiﬁed for multiplexed CRISPR genome editing to induce an MA9\nchromosomal translocation in HSPCs. Following CRISPR editing, the presence of a successful\nMA9 translocation was veriﬁed at both the genomic and transcriptional levels by PCR analysis and\nsequencing. Analysis of proliferation, clonogenicity, diﬀerentiation and gene expression robustly\ndemonstrated the functional ways in which this model recapitulates features of the disease in vitro.\nThis novel approach circumvents common caveats of previous methods, with no requirement for\ntransgenic or immunocompromised mice or primary human material. We have demonstrated the\nease of use of this approach in cell line and primary murine HSPCs which can be applied to other\nchromosomal translocations.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 236,
     "paragraph": "Increased clonogenicity and enrichment of progenitor cells with increased self-renewal capacity is a\nfundamental characteristic of leukaemias with MLL rearrangements. Although we saw no proliferative\nadvantage in MA9 32D HSPCs, we did observe a modest reduction in growth factor dependence\nas previously demonstrated. Normal primary HSPC cells have limited growth potential in vitro,\nwhich showed increased colony growth and number when expressing MA9. Increased clonogenicity",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 237,
     "paragraph": "is associated with increased c-Kit expression, a cell surface marker found in myeloblasts in up to\n80% of AML cases [54]. C-Kit expression has also been strongly associated with poor prognoses in\nother instances of chromosomal translocations such as t(8;21) [55]. We saw a signiﬁcant enrichment of\nc-Kit-expressing cells, indicating an enrichment of colony-forming LSC-like early progenitor cells in\nMA9-expressing cells consistent with leukaemic transformation. Assessment of myeloid diﬀerentiation\ndid not reveal a block in expression of diﬀerentiation markers in MA9-mediated cells, indicating that,\nalthough cells have acquired self-renewal properties, they maintain the ability to diﬀerentiate toward the\nmyeloid lineage. A block in terminal myeloid diﬀerentiation cannot be ruled out, and whether cells can\ncomplete myeloid diﬀerentiation remains to be investigated. Cells that are unable to diﬀerentiate to the\nGMP stage of diﬀerentiation in murine models of MLLr do not undergo leukaemic transformation [56],\nand so, it is understood that some level of diﬀerentiation down the myeloid pathway is required for\nMLLr AML transformation. Data produced by Stavropoulou et al. utilizing a Dox-inducible MA9\nmodel show that surface marker analysis of colonies derived from iMLL-AF9 LT-HSC and GMP\nsubpopulations showed cells expressing the Mac-1 and Gr-1 diﬀerentiation markers in addition to\nc-Kit in the presence of Dox [39].",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 238,
     "paragraph": "Our methodology has several advantages for use in genetic models. The tractability of this system\nis such that we can readily study MA9 translocations in combination with other genetic or epigenetic\nabnormalities. Generation of new sgRNAs targeting sequences of interest are quickly and easily cloned\ninto the CRISPR vector validated in this work and can be multiplexed as required. Our sgRNA target\nsequences were also selected not only for their commonality within MLLr patients but also for their\nprior use in alterative murine models of MA9, and as such, our approach oﬀers not only a robust model",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 239,
     "paragraph": "of human disease but also a means of comparison to alterative methodologies [35,41,42]. The work\npresented here and by others [48,58] exempliﬁes the ongoing shift towards precise genome editing\nwith CRISPR technologies to quickly and accurately recapitulate human disease in model systems.\nWe have demonstrated the tractability and potential of this methodology in modelling human MA9\nleukaemias, which represents an important advancement in the study of MA9-driven leukaemia.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 240,
     "paragraph": "C, 5% CO2. Human embryonic kidney (HEK)-239T and\nmurine embryonic ﬁbroblast NIH-3T3 cells were maintained in Dulbecco Modiﬁed Eagle Medium\n(DMEM; Gibco, Paisley, UK) supplemented with 10% heat-inactivated foetal bovine serum (FBS; Gibco,\nPaisley, UK), 2 mM L-glutamine (Gibco, Paisley, UK) and 1% Penicillin/ Streptomycin (Pen/Strep;\nGibco, Paisley, UK). 32D murine myeloid progenitor cell line HSPCs were maintained in Roswell Park\nMemorial Institute-1640 (RPMI-1640; Gibco, Paisley, UK) supplemented with 10% FBS, 10% WEHI-3B\nconditioned media, 2 mM L-glutamine and 1% Pen/Strep. Primary murine HSPCs were cultured\nin DMEM pre-stimulation media supplemented with 15 % FBS, 2 mM L-glutamine, 1% Pen/Strep,\n10 ng/mL recombinant murine interleukin-3 (rmIL3; PeproTech, London, UK), 10 ng/mL recombinant\nmurine interleukin-6 (rmIL6; PeproTech, London, UK) and 100 ng/mL recombinant murine stem cell\nfactor (rmSCF; PeproTech, London, UK) immediately following isolation and were transferred to\nDMEM activation media supplemented with 15% FBS, 2 mM L-glutamine, 1% Pen/Strep, 10 ng/mL\nrmIL3, 10 ng/mL rmIL6, 100 ng/mL rmSCF and 4 µg/mL polybrene (Sigma-Aldrich, Dorset, UK)\nfor transduction.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 241,
     "paragraph": "Samples were stained and analysed in PBS or PBS/2% FBS or sorted for GFP in the same buﬀer.\nSingle cells were gated by forward scatter area (FSC-A) vs height (FSC-H), and then viable cells were",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 242,
     "paragraph": "Methocult GF M3434 (Stem Cell Technologies, Vancouver, BC, Canada) methylcellulose media\ncontaining recombinant murine stem cell factor (rmSCF), recombinant murine interleukin-3 (rmIL-3),\nrecombinant human interleukin-6 (rhIL-6) and recombinant human erythropoietin (rhEPO) was used.\nEqual numbers of BM c-kit-enriched, GFP-sorted cells were prepared in triplicate and resuspended\nin culture media. Cell suspension was added to methylcellulose and transferred to 3 × 35 mm\ndishes (Greiner-Bio-One, Gloucestershire, UK) for 10–20 days. Colonies were scored, and cells were\nanalysed by ﬂow cytometry. If required, cells were replated to a second round of CFC following the\nsame protocol.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 243,
     "paragraph": "Funding: This research was funded by Kay Kendall Leukaemia Fund: NA, The Howat Foundation: NA, Cancer\nResearch UK Glasgow Centre: C596/A18076, Cancer Research UK Beatson Institute: C596/A17196, Yorkhill\nChildren’s Leukaemia Research Fund: NA, and Children with Cancer UK: NA.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 244,
     "paragraph": "Slany, R.K. The molecular mechanics of mixed lineage leukemia. Oncogene 2016, 35, 5215–5223. [CrossRef]\n[PubMed]\nAndersson, A.K.; Ma, J.; Wang, J.; Chen, X.; Gedman, A.L.; Dang, J.; Nakitandwe, J.; Holmfeldt, L.; Parker, M.;\nEaston, J.; et al. The landscape of somatic mutations in infant MLL-rearranged acute lymphoblastic leukemias.\nNat. Genet. 2015, 47, 330–337. [CrossRef] [PubMed]\nRichardson, C.; Jasin, M. Frequent chromosomal translocations induced by DNA double-strand breaks.\nNature 2000, 405, 697–700. [CrossRef] [PubMed]\nSlany, R.K. When epigenetics kills: MLL fusion proteins in leukemia. Hematol. Oncol. 2005, 23, 1–9. [CrossRef]\n4.\n5. Meyer, C.; Burmeister, T.; Gröger, D.; Tsaur, G.; Fechina, L.; Renneville, A.; Sutton, R.; Venn, N.C.;\nEmerenciano, M.; Pombo-De-Oliveira, M.S.; et al. The MLL recombinome of acute leukemias in 2017.\nLeukemia 2018, 32, 273–284. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 245,
     "paragraph": "6. Meyer, C.; Kowarz, E.; Hofmann, J.; Renneville, A.; Zuna, J.; Trka, J.; Ben Abdelali, R.; Macintyre, E.; De\nBraekeleer, E.; De Braekeleer, M.; et al. New insights to the MLL recombinome of acute leukemias. Leukemia\n2009, 23, 1490–1499. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 246,
     "paragraph": "7. Huret, J.L.; Ahmad, M.; Arsaban, M.; Bernheim, A.; Cigna, J.; Desangles, F.; Guignard, J.C.;\nJacquemot-Perbal, M.C.; Labarussias, M.; Leberre, V.; et al. Atlas of genetics and cytogenetics in oncology\nand haematology in 2013. Nucleic Acids Res. 2013, 41, D920–D924. [CrossRef]\nSuper, H.J.G.; McCabe, N.R.; Thirman, M.J.; Larson, R.A.; Le Beau, M.M.; Pedersen- Bjergaard, J.; Philip, P.;\nDiaz, M.O.; Rowley, J.D. Rearrangements of the MLL gene in therapy-related acute myeloid leukemia\nin patients previously treated with agents targeting DNA-topoisomerase II. Blood 1993, 82, 3705–3711.\n[CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 247,
     "paragraph": "10. Zhang, W.; Xia, X.; Reisenauer, M.R.; Hemenway, C.S.; Kone, B.C. Dot1a-AF9 complex mediates histone H3\nLys-79 hypermethylation and repression of ENaCα in an aldosterone-sensitive manner. J. Biol. Chem. 2006,\n281, 18059–18068. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 248,
     "paragraph": "12. Leach, B.I.; Kuntimaddi, A.; Schmidt, C.R.; Cierpicki, T.; Johnson, S.A.; Bushweller, J.H. Leukemia fusion\ntarget AF9 is an intrinsically disordered transcriptional regulator that recruits multiple partners via coupled\nfolding and binding. Structure 2013, 21, 176–183. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 249,
     "paragraph": "13. Mueller, D.; Bach, C.; Zeisig, D.; Garcia-Cuellar, M.P.; Monroe, S.; Sreekumar, A.; Zhou, R.; Nesvizhskii, A.;\nChinnaiyan, A.; Hess, J.L.; et al. A role for the MLL fusion partner ENL in transcriptional elongation and\nchromatin modiﬁcation. Blood 2007, 110, 4445–4454. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 250,
     "paragraph": "15. Kuntimaddi, A.; Achille, N.J.; Thorpe, J.; Lokken, A.A.; Singh, R.; Hemenway, C.S.; Adli, M.; Zeleznik-Le, N.J.;\nBushweller, J.H. Degree of Recruitment of DOT1L to MLL-AF9 Deﬁnes Level of H3K79 Di- and Tri-methylation\non Target Genes and Transformation Potential. Cell Rep. 2015, 11, 808–820. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 251,
     "paragraph": "17. Yokoyama, A.; Somervaille, T.C.P.; Smith, K.S.; Rozenblatt-Rosen, O.; Meyerson, M.; Cleary, M.L. The menin\ntumor suppressor protein is an essential oncogenic cofactor for MLL-associated leukemogenesis. Cell 2005,\n123, 207–218. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 252,
     "paragraph": "18. Armstrong, S.A.; Staunton, J.E.; Silverman, L.B.; Pieters, R.; Den Boer, M.L.; Minden, M.D.; Sallan, S.E.;\nLander, E.S.; Golub, T.R.; Korsmeyer, S.J. MLL translocations specify a distinct gene expression proﬁle that\ndistinguishes a unique leukemia. Nat. Genet. 2002, 30, 41–47. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 253,
     "paragraph": "19. Zeisig, B.B.; Milne, T.; Garcia-Cuellar, M.-P.; Schreiner, S.; Martin, M.-E.; Fuchs, U.; Borkhardt, A.; Chanda, S.K.;\nWalker, J.; Soden, R.; et al. Hoxa9 and Meis1 Are Key Targets for MLL-ENL-Mediated Cellular Immortalization.\nMol. Cell. Biol. 2004, 24, 617–628. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 254,
     "paragraph": "20. Guo, H.; Chu, Y.; Wang, L.; Chen, X.; Chen, Y.; Cheng, H.; Zhang, L.; Zhou, Y.; Yang, F.C.; Cheng, T.; et al.\nPBX3 is essential for leukemia stem cell maintenance in MLL-rearranged leukemia. Int. J. Cancer 2017, 141,\n324–335. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 255,
     "paragraph": "21. Prange, K.H.M.; Mandoli, A.; Kuznetsova, T.; Wang, S.Y.; Sotoca, A.M.; Marneth, A.E.; Van Der Reijden, B.A.;\nStunnenberg, H.G.; Martens, J.H.A. MLL-AF9 and MLL-AF4 oncofusion proteins bind a distinct enhancer\nrepertoire and target the RUNX1 program in 11q23 acute myeloid leukemia. Oncogene 2017, 36, 3346–3356.\n[CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 256,
     "paragraph": "23. Van Der Linden, M.H.; Willekes, M.; Roon, E.; Seslija, L.; Schneider, P.; Pieters, R.; Stam, R.W. MLL\nfusion-driven activation of CDK6 potentiates proliferation in MLL-rearranged infant ALL. Cell Cycle 2014,\n13, 834–844. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 257,
     "paragraph": "24. Bindels, E.M.J.; Havermans, M.; Lugthart, S.; Erpelinck, C.; Wocjtowicz, E.; Krivtsov, A.V.; Rombouts, E.;\nArmstrong, S.A.; Taskesen, E.; Haanstra, J.R.; et al. EVI1 is critical for the pathogenesis of a subset of\nMLL-AF9-rearranged AMLs. Blood 2012, 119, 5838–5849. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 258,
     "paragraph": "26. Wang, Q.F.; Wu, G.; Mi, S.; He, F.; Wu, J.; Dong, J.; Luo, R.T.; Mattison, R.; Kaberlein, J.J.; Prabhakar, S.; et al.\nMLL fusion proteins preferentially regulate a subset of wild-type MLL target genes in the leukemic genome.\nBlood 2011, 117, 6895–6905. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 259,
     "paragraph": "27. Takacova, S.; Luzna, P.; Stranecky, V.; Divoky, V. The Potential Role of the Six1/Eya1 Pathway in the\nEstablishment of Leukemia Stem Cells in MLL-ENL—Induced Leukemia. Blood 2011, 118, 1362. [CrossRef]\n28. Arai, S.; Yoshimi, A.; Shimabe, M.; Ichikawa, M.; Nakagawa, M.; Imai, Y.; Goyama, S.; Kurokawa, M. Evi-1 is\na transcriptional target of mixed-lineage leukemia oncoproteins in hematopoietic stem cells. Blood 2011, 117,\n6304–6314. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 260,
     "paragraph": "29. Placke, T.; Faber, K.; Nonami, A.; Putwain, S.L.; Salih, H.R.; Heidel, F.H.; Krämer, A.; Root, D.E.; Barbie, D.A.;\nKrivtsov, A.V.; et al. Requirement for CDK6 in MLL-rearranged acute myeloid leukemia. Blood 2014, 124,\n13–23. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 261,
     "paragraph": "30. Corral, J.; Lavenir, I.; Impey, H.; Warren, A.J.; Forster, A.; Larson, T.A.; Bell, S.; McKenzie, A.N.J.; King, G.;\nRabbitts, T.H. An MII-AF9 fusion gene made by homologous recombination causes acute leukemia in\nchimeric mice: A method to create fusion oncogenes. Cell 1996, 85, 853–861. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 262,
     "paragraph": "31. Dobson, C.L.; Warren, A.J.; Pannell, R.; Forster, A.; Lavenir, I.; Corral, J.; Smith, A.J.H.; Rabbitts, T.H.\nThe Mll-AF9 gene fusion in mice controls myeloproliferation and speciﬁes acute myeloid leukaemogenesis.\nEMBO J. 1999, 18, 3564–3574. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 263,
     "paragraph": "32. Chen, W.; Li, Q.; Hudson, W.A.; Kumar, A.; Kirchhof, N.; Kersey, J.H. Amurine Mll-AF4 knock-in model\nresults in lymphoid and myeloid deregulation and hematologic malignancy. Blood 2006, 108, 669–677.\n[CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 264,
     "paragraph": "33. Chen, W.; Kumar, A.R.; Hudson, W.A.; Li, Q.; Wu, B.; Staggs, R.A.; Lund, E.A.; Sam, T.N.; Kersey, J.H.\nMalignant Transformation Initiated by Mll-AF9: Gene Dosage and Critical Target Cells. Cancer Cell 2008, 13,\n432–440. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 265,
     "paragraph": "34. Collins, E.C.; Pannell, R.; Simpson, E.M.; Forster, A.; Rabbitts, T.H. Inter-chromosomal recombination of Mll\nand Af9 genes mediated by cre-lox in mouse development. EMBO Rep. 2000, 1, 127–132. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 266,
     "paragraph": "35. Drynan, L.F.; Pannell, R.; Forster, A.; Chan, N.M.M.; Cano, F.; Daser, A.; Rabbitts, T.H. Mll fusions generated\nby Cre-loxP-mediated de novo translocations can induce lineage reassignment in tumorigenesis. EMBO J.\n2005, 24, 3136–3146. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 267,
     "paragraph": "36. Krivtsov, A.V.; Twomey, D.; Feng, Z.; Stubbs, M.C.; Wang, Y.; Faber, J.; Levine, J.E.; Wang, J.; Hahn, W.C.;\nGilliland, D.G.; et al. Transformation from committed progenitor to leukaemia stem cell initiated by MLL-AF9.\nNature 2006, 442, 818–822. [CrossRef] [PubMed]\nSomervaille, T.C.P.; Cleary, M.L. Identiﬁcation and characterization of leukemia stem cells in murine MLL-AF9\nacute myeloid leukemia. Cancer Cell 2006, 10, 257–268. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 268,
     "paragraph": "38. Krivtsov, A.V.; Figueroa, M.E.; Sinha, A.U.; Stubbs, M.C.; Feng, Z.; Valk, P.J.M.; Delwel, R.; Döhner, K.;\nBullinger, L.; Kung, A.L.; et al. Cell of origin determines clinically relevant subtypes of MLL-rearranged\nAML. Leukemia 2013, 27, 852–860. [CrossRef]\nStavropoulou, V.; Kaspar, S.; Brault, L.; Sanders, M.A.; Juge, S.; Morettini, S.; Tzankov, A.; Iacovino, M.;\nLau, I.J.; Milne, T.A.; et al. MLL-AF9 Expression in Hematopoietic Stem Cells Drives a Highly Invasive AML\nExpressing EMT-Related Genes Linked to Poor Outcome. Cancer Cell 2016, 30, 43–58. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 269,
     "paragraph": "40. Chen, X.; Burkhardt, D.B.; Hartman, A.A.; Hu, X.; Eastman, A.E.; Sun, C.; Wang, X.; Zhong, M.;\nKrishnaswamy, S.; Guo, S. MLL-AF9 initiates transformation from fast-proliferating myeloid progenitors.\nNat. Commun. 2019, 10, 5767. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 270,
     "paragraph": "41. Buechele, C.; Breese, E.H.; Schneidawind, D.; Lin, C.H.; Jeong, J.; Duque-Afonso, J.; Wong, S.H.K.; Smith, K.S.;\nNegrin, R.S.; Porteus, M.; et al. MLL leukemia induction by genome editing of human CD34+ hematopoietic\ncells. Blood 2015, 126, 1683–1694. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 271,
     "paragraph": "42. Breese, E.H.; Buechele, C.; Dawson, C.; Cleary, M.L.; Porteus, M.H. Use of genome engineering to create\npatient speciﬁc MLL translocations in primary human hematopoietic stem and progenitor cells. PLoS ONE\n2015, 10, e0136644. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 272,
     "paragraph": "44. Maddalo, D.; Manchado, E.; Concepcion, C.P.; Bonetti, C.; Vidigal, J.A.; Han, Y.C.; Ogrodowski, P.; Crippa, A.;\nRekhtman, N.; De Stanchina, E.; et al. In vivo engineering of oncogenic chromosomal rearrangements with\nthe CRISPR/Cas9 system. Nature 2014, 516, 423–427. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 273,
     "paragraph": "45. Torres, R.; Martin, M.C.; Garcia, A.; Cigudosa, J.C.; Ramirez, J.C.; Rodriguez-Perales, S. Engineering human\ntumour-associated chromosomal translocations with the RNA-guided CRISPR-Cas9 system. Nat. Commun.\n2014, 5, 3964. [CrossRef]\nJiang, J.; Zhang, L.; Zhou, X.; Chen, X.; Huang, G.; Li, F.; Wang, R.; Wu, N.; Yan, Y.; Tong, C.; et al. Induction\nof site-speciﬁc chromosomal translocations in embryonic stem cells by CRISPR/Cas9. Sci. Rep. 2016, 6, 21918.\n[CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 274,
     "paragraph": "47. Reimer, J.; Knöß, S.; Labuhn, M.; Charpentier, E.M.; Göhring, G.; Schlegelberger, B.; Klusmann, J.H.; Heckl, D.\nCRISPR-Cas9-induced t(11;19)/MLL-ENL translocations initiate leukemia in human hematopoietic progenitor\ncells in vivo. Haematologica 2017, 102, 1558–1566. [CrossRef]\nSchneidawind, C.; Jeong, J.; Schneidawind, D.; Kim, I.S.; Duque-Afonso, J.; Wong, S.H.K.; Iwasaki, M.;\nBreese, E.H.; Zehnder, J.L.; Porteus, M.; et al. MLL leukemia induction by t(9;11) chromosomal translocation\nin human hematopoietic stem cells using genome editing. Blood Adv. 2018, 2, 832–845. [CrossRef]\nJansen, M.W.J.C.; van der Velden, V.H.J.; van Dongen, J.J.M. Eﬃcient and easy detection of MLL-AF4,\nMLL-AF9 and MLL-ENL fusion gene transcripts by multiplex real-time quantitative RT-PCR in TaqMan and\nLightCycler [11,12]. Leukemia 2005, 19, 2016–2018. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 275,
     "paragraph": "51. Hsu, P.D.; Scott, D.A.; Weinstein, J.A.; Ran, F.A.; Konermann, S.; Agarwala, V.; Li, Y.; Fine, E.J.; Wu, X.;\nShalem, O.; et al. DNA targeting speciﬁcity of RNA-guided Cas9 nucleases. Nat. Biotechnol. 2013, 31, 827–832.\n[CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 276,
     "paragraph": "52. Metcalf, D.; Glaser, S.P.; Xu, Z.; Di Rago, L.; Mifsud, S. Reversible growth factor dependency and autonomy\nduring murine myelomonocytic leukemia induced by oncogenes. Proc. Natl. Acad. Sci. USA 2013, 110,\n17029–17034. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 277,
     "paragraph": "Sasca, D.; Hähnel, P.S.; Szybinski, J.; Khawaja, K.; Kriege, O.; Pante, S.V.; Bullinger, L.; Strand, S.; Strand, D.;\nTheobald, M.; et al. SIRT1 prevents genotoxic stress-induced p53 activation in acute myeloid leukemia. Blood\n2014, 124, 121–133. [CrossRef] [PubMed]\nIkeda, H.; Kanakura, Y.; Tamaki, T.; Kuriu, A.; Kitayama, H.; Ishikawa, J.; Kanayama, Y.; Yonezawa, T.;\nTarui, S.; Griﬃn, J.D. Expression and functional role of the proto-oncogene c-kit in acute myeloblastic\nleukemia cells. Blood 1991, 78, 2962–2968. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 278,
     "paragraph": "55. Paschka, P.; Marcucci, G.; Ruppert, A.S.; Mrózek, K.; Chen, H.; Kittles, R.A.; Vukosavljevic, T.; Perrotti, D.;\nVardiman, J.W.; Carroll, A.J.; et al. Adverse prognostic signiﬁcance of KIT mutations in adult acute myeloid\nleukemia with inv(16) and t(8;21): A Cancer and Leukemia Group B study. J. Clin. Oncol. 2006, 24, 3904–3911.\n[CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 279,
     "paragraph": "57. Chang, M.J.; Wu, H.; Achille, N.J.; Reisenauer, M.R.; Chou, C.W.; Zeleznik-Le, N.J.; Hemenway, C.S.;\nZhang, W. Histone H3 Lysine 79 Methyltransferase Dot1 Is Required for Immortalization by MLL Oncogenes.\nCancer Res. 2010, 70, 10234–10242. [CrossRef]\nJeong, J.; Jager, A.; Domizi, P.; Pavel-Dinu, M.; Gojenola, L.; Iwasaki, M.; Wei, M.C.; Pan, F.; Zehnder, J.L.;\nPorteus, M.H.; et al. High-eﬃciency CRISPR induction of t(9;11) chromosomal translocations and acute\nleukemias in human blood stem cells. Blood Adv. 2019, 3, 2825–2835. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 280,
     "paragraph": "59. Heckl, D.; Kowalczyk, M.S.; Yudovich, D.; Belizaire, R.; Puram, R.V.; McConkey, M.E.; Thielke, A.; Aster, J.C.;\nRegev, A.; Ebert, B.L. Generation of mouse models of myeloid malignancy with combinatorial genetic lesions\nusing CRISPR-Cas9 genome editing. Nat. Biotechnol. 2014, 32, 941–946. [CrossRef]",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 281,
     "paragraph": "60. O’Connor, C.; Yalla, K.; Salomé, M.; Ananyambica Moka, H.; Gómez Castañeda, E.; Eyers, P.A.; Keeshan, K.\nTrib2 expression in granulocyte-monocyte progenitors drives a highly drug resistant acute myeloid leukaemia\nlinked to elevated Bcl2. Oncotarget 2018, 9, 14977–14992.",
-    "jurnal": "ijms-21-04266 (1).pdf"
+    "jurnal": "ijms-21-04266.pdf"
   },
   {
     "id": 282,
-    "paragraph": "Abstract: Chromosomal rearrangements of the mixed lineage leukaemia (MLL, also known as KMT2A)\ngene on chromosome 11q23 are amongst the most common genetic abnormalities observed in human\nacute leukaemias. MLL rearrangements (MLLr) are the most common cytogenetic abnormalities\nin infant and childhood acute myeloid leukaemia (AML) and acute lymphocytic leukaemia (ALL)\nand do not normally acquire secondary mutations compared to other leukaemias. To model these\nleukaemias, we have used clustered regularly interspaced short palindromic repeats (CRISPR)/Cas9\ngene editing to induce MLL-AF9 (MA9) chromosomal rearrangements in murine hematopoietic\nstem and progenitor cell lines and primary cells. By utilizing a dual-single guide RNA (sgRNA)\napproach targeting the breakpoint cluster region of murine Mll and Af9 equivalent to that in human\nMA9 rearrangements, we show eﬃcient de novo generation of MA9 fusion product at the DNA\nand RNA levels in the bulk population. The leukaemic features of MA9-induced disease were\nobserved including increased clonogenicity, enrichment of c-Kit-positive leukaemic stem cells and\nincreased MA9 target gene expression. This approach provided a rapid and reliable means of de\nnovo generation of Mll-Af9 genetic rearrangements in murine haematopoietic stem and progenitor\ncells (HSPCs), using CRISPR/Cas9 technology to produce a cellular model of MA9 leukaemias which\nfaithfully reproduces many features of the human disease in vitro.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 283,
-    "paragraph": "Rearrangements of the mixed lineage leukaemia gene (MLLr) are the most common cytogenetic\nabnormalities found in infant and childhood acute lymphocytic leukaemia (ALL) and acute myeloid\nleukaemia (AML) [1] and are found in 80% and 35–50% of all paediatric ALL and AML cases\nrespectively [1]. These leukaemias do not typically acquire many secondary mutations [2] and are\nthought to result from inappropriate repair of DNA double strand breaks (DSBs) via nonhomologous\nend joining (NHEJ) in haematopoietic cells [3]. As the 8.3-kb breakpoint cluster region of mixed\nlineage leukaemia (MLL) is located between exons 8 and 13 for almost all MLLr cases [4], these fusion\ngenes contain the ﬁrst 8–13 exons of MLL and a variable number of exons from the fusion partner\ngenes (FPGs). Up to 135 MLL FPGs have been identiﬁed and are well described elsewhere [5–7].",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 284,
-    "paragraph": "These include cytoplasmic proteins (AF6, GAS7 and EEN), septins (SEPT2, SEPT5, SEPT6, SEPT9\nand SEPT11) and histone acetyltransferases (CBP and P300) as well as the largest subset, the nuclear\nproteins. This category contains the most common FPGs such as ENL, ELL, AF4, AF9 and AF10,\nwhich account for approximately 80% of all MLL fusions [5]. Of these, MLL-AF9 (MA9) t(9;11)(p22;q23)\ntranslocations are found in 30% of MLLr AML cases [5] irrespective of age and are commonly found in\na subset of adult patients with therapy-related AML [8].",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 285,
-    "paragraph": "Although the precise functional properties of AF9 are unknown, it has been demonstrated to\nform multimer complexes with members of the polycomb repressive complex 1 (PRC1) complex\nand disruptor of telomere silencing (DOT1L) via a conserved ANC1 homology domain (AHD),\nindicating a role in transcriptional regulation [9,10]. These properties appear to play a critical role in\nleukaemic transformation [11,12]. Oncogenic properties of MLL fusion proteins include interference\nwith transcriptional elongation, resulting in dysregulation of target genes [13,14]. Aberrant expression\nof MLL target genes is strongly dependent on DOT1L-mediated H3K79 methylation [15], which is\na critical requirement for MA9 leukaemogensis [16]. Members of the Homeobox (HOX) family are\ncommonly overexpressed in MLLr leukaemias as a direct target of MLL fusion proteins [4,17]. The HOX\nfamily are critical factors in the self-renewing properties of haematopoietic stem cells (HSCs) and their\noverexpression results in a diﬀerentiation block and an increase in self-renewal of immature myeloid\nprogenitor cells. The HOX cofactors MEIS1 [18,19] and PBX3 [20] are also direct targets of MLL fusion\nproteins [21] frequently found upregulated in coordination with HOX targets. Importantly, there is\nevidence to suggest that MA9-mediated leukaemia can progress even in the absence of HOX genes\nsuch as HOXA9 [22], indicating an important role of non-HOX family genes. This includes CDK6 [23],\nEVI-1 [24,25] and EYA1 [26,27], which are also found upregulated in MLLr leukaemias as a result of\ndirect binding of MLL-FPG proteins to gene promoters [26,28,29], and play a vital role in leukaemic\ntransformation including cellular immortalization [26], hyperproliferation [23,24], chemoresistance [24]\nand dysregulated self-renewal [25,27]. CDK6 speciﬁcally has been highlighted as a critical eﬀector of\nMLLr leukemogenesis as its depletion in mice with MA9-driven AML was shown to overcome the\nmyeloid diﬀerentiation block and to prolong survival in vivo [29].",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 286,
-    "paragraph": "Numerous murine models of MLLr have been generated and have each oﬀered valuable insights.\nLimitations with murine models are in large part due to the technology used to mimic MLL chromosomal\nrearrangements. An early knock-in model [30] utilized homologous recombination (HR) to generate\nan Mll-Af9 fusion gene and displayed a myeloproliferative disorder (MPD), leading primarily to AML\ncharacterized by expansion of immature myeloid populations with a small percentage developing\nB-cell ALL (B-ALL) [31]; thus, this model resembles the phenotypic heterogeneity of MLLr leukaemias,\nwhich can manifest as AML; ALL; or in a minority of cases, mixed phenotype acute leukaemia (MPAL).\nHowever, this system lacked tissue-speciﬁc control of MA9 expression throughout development and\nmice were prone to developmental defects as a result of heterozygosity for wild type (WT) Mll [32].\nTo gain more insight into cell-type speciﬁc eﬀects, a subsequent approach involved enrichment of\nhaematopoietic populations from these HR-generated MA9 knock-in mice, followed by secondary\ntransplantation into WT recipients [33]. This also demonstrated eﬃcient generation of AML, especially\nwhen Lin−Sca-1+c-Kit+ (LSK) cells, which include HSCs and haematopoietic stem and progenitor\n(HSPCs), were transplanted. An advantage of these methods is the expression of the MA9 transgene from\nthe endogenous Mll promoter, which results in physiological transgene expression levels. This model\ncannot however address the leukaemia stem cell origin with respect to de novo AML initiation.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 287,
-    "paragraph": "Translocator models utilizing the Cre-loxP system have generated MA9 translocations via loxP\nsites inserted into those intronic regions of endogenous Mll and Af9 genes where breakpoints are\nmost frequently found in human MLLr patients [34]. Using Lmo2-Cre to express Cre recombinase,\nMll-Af9 was generated in pluripotent stem cells and led exclusively to myeloid leukaemia whereas\nT-cell-restricted expression using lck-Cre did not lead to leukomogeneis [35]. The advantage of\nthis Cre-loxP system is that MA9 expression can be driven by lineage-restricted promoters from\nthe endogenous loci [35], reﬂecting physiological expression. Further models targeting Mll-Af9",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 288,
-    "paragraph": "expression to speciﬁc cells within the haematopoietic system have utilized retrovirus-driven expression\nfollowed by transduction and transplantation approaches. These methods beneﬁt from its speed\nand ease of use [36,37] and has led to the identiﬁcation of both the HSC and the granulocyte and\nmacrophage progenitor (GMP) as potential leukaemic stem cells-of-origin with divergent clinical\nfeatures [38]. Retrovirus-mediated expression models however drive transgene expressions that\nare not physiological. To gain greater control over the level of cell-restricted transgene expression,\nDox-inducible transgenic models have since been developed [39,40] enabling close-to-physiological\nlevels and reversible transgene expression in a Dox dose-dependent manner. Using this model, it was\ndemonstrated that long-term HSC (LT-HSC) populations result in an invasive and chemoresistant AML\nwith a primitive progenitor phenotype and a distinct stemness-related gene expression pattern [39].\nDox-inducible transgene expression is however not controlled by an endogenous promoter. “Leaky” Cre\nexpression from tissue-speciﬁc promoters together with the expensive and time-consuming nature of\ntissue-restricted strain generation are major limitations with the Cre-loxP and Dox-inducible transgenic\nmodel systems. More recent attempts to circumvent some of the issues highlighted above have utilized\ntranscription activator like eﬀector nucleases (TALEN) technology to generate endogenous MA9 [41,42].\nThese cells exhibited a signiﬁcantly higher clonogenic potential with colony morphologies consistent\nwith an immature cell type and development of AML, ALL and MPAL upon xenotransplantation [41].\nClustered regularly interspaced short palindromic repeats (CRISPR)/Cas9 technology facilitates\ncreation of DSBs at almost any genomic sequence of interest technology and has revolutionised the\nway in which we are able to manipulate the genome, aﬀording a more ﬂexible and readily applicable\nmethod for generating novel disease models, including chromosomal translocations, with an ease and\nsimplicity far outweighing prior technologies such as TALEN and Cre-LoxP. CRISPR technology has\nfacilitated generation of chromosomal deletions [43] and rearrangements, including inversions [44] and\ntranslocations [45–48]. Here, we demonstrate eﬃcient CRISPR-mediated generation of an endogenous\nMll-Af9 reciprocal translocation in a murine cell line and primary HSPCs. By utilizing a dual-single\nguide RNA (sgRNA) approach to target the most common breakpoints in human MA9 rearrangements,\nwe show rapid, reliable generation of simultaneous breakpoints and a fusion product at the DNA\nand RNA levels. The resultant transformed cells reliably recapitulated features of human MLLr\nleukaemias. These include increased expression of MA9 target genes, reduced IL3 dependency,\nhigher clonogenic potential and self-renewal in primary murine HSPCs. This multiplexed CRISPR\ntechnology oﬀers a robust and malleable approach for generating murine models of the multitude of\nhuman translocation-associated leukaemias.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 289,
-    "paragraph": "Herein, we have demonstrated generation of a de novo MA9 translocation in murine HSPCs using\nstate-of-the-art CRISPR/Cas9 technology to create a novel murine leukaemia model which faithfully\nrecapitulates multiple features of human MA9 leukaemia. By rational design of sgRNA ﬂanking\nbreakpoint regions with common occurrence in MLLr AML patients and prior MA9 transgenic models,\nwe identiﬁed optimal combinations of sgRNA sequences with which to induce simultaneous DSBs\nat the speciﬁc loci. Each guide was validated for individual cleavage eﬃciency, and subsequently,\noptimal combinations were identiﬁed for multiplexed CRISPR genome editing to induce an MA9\nchromosomal translocation in HSPCs. Following CRISPR editing, the presence of a successful\nMA9 translocation was veriﬁed at both the genomic and transcriptional levels by PCR analysis and\nsequencing. Analysis of proliferation, clonogenicity, diﬀerentiation and gene expression robustly\ndemonstrated the functional ways in which this model recapitulates features of the disease in vitro.\nThis novel approach circumvents common caveats of previous methods, with no requirement for\ntransgenic or immunocompromised mice or primary human material. We have demonstrated the\nease of use of this approach in cell line and primary murine HSPCs which can be applied to other\nchromosomal translocations.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 290,
-    "paragraph": "Increased clonogenicity and enrichment of progenitor cells with increased self-renewal capacity is a\nfundamental characteristic of leukaemias with MLL rearrangements. Although we saw no proliferative\nadvantage in MA9 32D HSPCs, we did observe a modest reduction in growth factor dependence\nas previously demonstrated. Normal primary HSPC cells have limited growth potential in vitro,\nwhich showed increased colony growth and number when expressing MA9. Increased clonogenicity",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 291,
-    "paragraph": "is associated with increased c-Kit expression, a cell surface marker found in myeloblasts in up to\n80% of AML cases [54]. C-Kit expression has also been strongly associated with poor prognoses in\nother instances of chromosomal translocations such as t(8;21) [55]. We saw a signiﬁcant enrichment of\nc-Kit-expressing cells, indicating an enrichment of colony-forming LSC-like early progenitor cells in\nMA9-expressing cells consistent with leukaemic transformation. Assessment of myeloid diﬀerentiation\ndid not reveal a block in expression of diﬀerentiation markers in MA9-mediated cells, indicating that,\nalthough cells have acquired self-renewal properties, they maintain the ability to diﬀerentiate toward the\nmyeloid lineage. A block in terminal myeloid diﬀerentiation cannot be ruled out, and whether cells can\ncomplete myeloid diﬀerentiation remains to be investigated. Cells that are unable to diﬀerentiate to the\nGMP stage of diﬀerentiation in murine models of MLLr do not undergo leukaemic transformation [56],\nand so, it is understood that some level of diﬀerentiation down the myeloid pathway is required for\nMLLr AML transformation. Data produced by Stavropoulou et al. utilizing a Dox-inducible MA9\nmodel show that surface marker analysis of colonies derived from iMLL-AF9 LT-HSC and GMP\nsubpopulations showed cells expressing the Mac-1 and Gr-1 diﬀerentiation markers in addition to\nc-Kit in the presence of Dox [39].",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 292,
-    "paragraph": "Our methodology has several advantages for use in genetic models. The tractability of this system\nis such that we can readily study MA9 translocations in combination with other genetic or epigenetic\nabnormalities. Generation of new sgRNAs targeting sequences of interest are quickly and easily cloned\ninto the CRISPR vector validated in this work and can be multiplexed as required. Our sgRNA target\nsequences were also selected not only for their commonality within MLLr patients but also for their\nprior use in alterative murine models of MA9, and as such, our approach oﬀers not only a robust model",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 293,
-    "paragraph": "of human disease but also a means of comparison to alterative methodologies [35,41,42]. The work\npresented here and by others [48,58] exempliﬁes the ongoing shift towards precise genome editing\nwith CRISPR technologies to quickly and accurately recapitulate human disease in model systems.\nWe have demonstrated the tractability and potential of this methodology in modelling human MA9\nleukaemias, which represents an important advancement in the study of MA9-driven leukaemia.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 294,
-    "paragraph": "C, 5% CO2. Human embryonic kidney (HEK)-239T and\nmurine embryonic ﬁbroblast NIH-3T3 cells were maintained in Dulbecco Modiﬁed Eagle Medium\n(DMEM; Gibco, Paisley, UK) supplemented with 10% heat-inactivated foetal bovine serum (FBS; Gibco,\nPaisley, UK), 2 mM L-glutamine (Gibco, Paisley, UK) and 1% Penicillin/ Streptomycin (Pen/Strep;\nGibco, Paisley, UK). 32D murine myeloid progenitor cell line HSPCs were maintained in Roswell Park\nMemorial Institute-1640 (RPMI-1640; Gibco, Paisley, UK) supplemented with 10% FBS, 10% WEHI-3B\nconditioned media, 2 mM L-glutamine and 1% Pen/Strep. Primary murine HSPCs were cultured\nin DMEM pre-stimulation media supplemented with 15 % FBS, 2 mM L-glutamine, 1% Pen/Strep,\n10 ng/mL recombinant murine interleukin-3 (rmIL3; PeproTech, London, UK), 10 ng/mL recombinant\nmurine interleukin-6 (rmIL6; PeproTech, London, UK) and 100 ng/mL recombinant murine stem cell\nfactor (rmSCF; PeproTech, London, UK) immediately following isolation and were transferred to\nDMEM activation media supplemented with 15% FBS, 2 mM L-glutamine, 1% Pen/Strep, 10 ng/mL\nrmIL3, 10 ng/mL rmIL6, 100 ng/mL rmSCF and 4 µg/mL polybrene (Sigma-Aldrich, Dorset, UK)\nfor transduction.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 295,
-    "paragraph": "Samples were stained and analysed in PBS or PBS/2% FBS or sorted for GFP in the same buﬀer.\nSingle cells were gated by forward scatter area (FSC-A) vs height (FSC-H), and then viable cells were",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 296,
-    "paragraph": "Methocult GF M3434 (Stem Cell Technologies, Vancouver, BC, Canada) methylcellulose media\ncontaining recombinant murine stem cell factor (rmSCF), recombinant murine interleukin-3 (rmIL-3),\nrecombinant human interleukin-6 (rhIL-6) and recombinant human erythropoietin (rhEPO) was used.\nEqual numbers of BM c-kit-enriched, GFP-sorted cells were prepared in triplicate and resuspended\nin culture media. Cell suspension was added to methylcellulose and transferred to 3 × 35 mm\ndishes (Greiner-Bio-One, Gloucestershire, UK) for 10–20 days. Colonies were scored, and cells were\nanalysed by ﬂow cytometry. If required, cells were replated to a second round of CFC following the\nsame protocol.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 297,
-    "paragraph": "Funding: This research was funded by Kay Kendall Leukaemia Fund: NA, The Howat Foundation: NA, Cancer\nResearch UK Glasgow Centre: C596/A18076, Cancer Research UK Beatson Institute: C596/A17196, Yorkhill\nChildren’s Leukaemia Research Fund: NA, and Children with Cancer UK: NA.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 298,
-    "paragraph": "Slany, R.K. The molecular mechanics of mixed lineage leukemia. Oncogene 2016, 35, 5215–5223. [CrossRef]\n[PubMed]\nAndersson, A.K.; Ma, J.; Wang, J.; Chen, X.; Gedman, A.L.; Dang, J.; Nakitandwe, J.; Holmfeldt, L.; Parker, M.;\nEaston, J.; et al. The landscape of somatic mutations in infant MLL-rearranged acute lymphoblastic leukemias.\nNat. Genet. 2015, 47, 330–337. [CrossRef] [PubMed]\nRichardson, C.; Jasin, M. Frequent chromosomal translocations induced by DNA double-strand breaks.\nNature 2000, 405, 697–700. [CrossRef] [PubMed]\nSlany, R.K. When epigenetics kills: MLL fusion proteins in leukemia. Hematol. Oncol. 2005, 23, 1–9. [CrossRef]\n4.\n5. Meyer, C.; Burmeister, T.; Gröger, D.; Tsaur, G.; Fechina, L.; Renneville, A.; Sutton, R.; Venn, N.C.;\nEmerenciano, M.; Pombo-De-Oliveira, M.S.; et al. The MLL recombinome of acute leukemias in 2017.\nLeukemia 2018, 32, 273–284. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 299,
-    "paragraph": "6. Meyer, C.; Kowarz, E.; Hofmann, J.; Renneville, A.; Zuna, J.; Trka, J.; Ben Abdelali, R.; Macintyre, E.; De\nBraekeleer, E.; De Braekeleer, M.; et al. New insights to the MLL recombinome of acute leukemias. Leukemia\n2009, 23, 1490–1499. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 300,
-    "paragraph": "7. Huret, J.L.; Ahmad, M.; Arsaban, M.; Bernheim, A.; Cigna, J.; Desangles, F.; Guignard, J.C.;\nJacquemot-Perbal, M.C.; Labarussias, M.; Leberre, V.; et al. Atlas of genetics and cytogenetics in oncology\nand haematology in 2013. Nucleic Acids Res. 2013, 41, D920–D924. [CrossRef]\nSuper, H.J.G.; McCabe, N.R.; Thirman, M.J.; Larson, R.A.; Le Beau, M.M.; Pedersen- Bjergaard, J.; Philip, P.;\nDiaz, M.O.; Rowley, J.D. Rearrangements of the MLL gene in therapy-related acute myeloid leukemia\nin patients previously treated with agents targeting DNA-topoisomerase II. Blood 1993, 82, 3705–3711.\n[CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 301,
-    "paragraph": "10. Zhang, W.; Xia, X.; Reisenauer, M.R.; Hemenway, C.S.; Kone, B.C. Dot1a-AF9 complex mediates histone H3\nLys-79 hypermethylation and repression of ENaCα in an aldosterone-sensitive manner. J. Biol. Chem. 2006,\n281, 18059–18068. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 302,
-    "paragraph": "12. Leach, B.I.; Kuntimaddi, A.; Schmidt, C.R.; Cierpicki, T.; Johnson, S.A.; Bushweller, J.H. Leukemia fusion\ntarget AF9 is an intrinsically disordered transcriptional regulator that recruits multiple partners via coupled\nfolding and binding. Structure 2013, 21, 176–183. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 303,
-    "paragraph": "13. Mueller, D.; Bach, C.; Zeisig, D.; Garcia-Cuellar, M.P.; Monroe, S.; Sreekumar, A.; Zhou, R.; Nesvizhskii, A.;\nChinnaiyan, A.; Hess, J.L.; et al. A role for the MLL fusion partner ENL in transcriptional elongation and\nchromatin modiﬁcation. Blood 2007, 110, 4445–4454. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 304,
-    "paragraph": "15. Kuntimaddi, A.; Achille, N.J.; Thorpe, J.; Lokken, A.A.; Singh, R.; Hemenway, C.S.; Adli, M.; Zeleznik-Le, N.J.;\nBushweller, J.H. Degree of Recruitment of DOT1L to MLL-AF9 Deﬁnes Level of H3K79 Di- and Tri-methylation\non Target Genes and Transformation Potential. Cell Rep. 2015, 11, 808–820. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 305,
-    "paragraph": "17. Yokoyama, A.; Somervaille, T.C.P.; Smith, K.S.; Rozenblatt-Rosen, O.; Meyerson, M.; Cleary, M.L. The menin\ntumor suppressor protein is an essential oncogenic cofactor for MLL-associated leukemogenesis. Cell 2005,\n123, 207–218. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 306,
-    "paragraph": "18. Armstrong, S.A.; Staunton, J.E.; Silverman, L.B.; Pieters, R.; Den Boer, M.L.; Minden, M.D.; Sallan, S.E.;\nLander, E.S.; Golub, T.R.; Korsmeyer, S.J. MLL translocations specify a distinct gene expression proﬁle that\ndistinguishes a unique leukemia. Nat. Genet. 2002, 30, 41–47. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 307,
-    "paragraph": "19. Zeisig, B.B.; Milne, T.; Garcia-Cuellar, M.-P.; Schreiner, S.; Martin, M.-E.; Fuchs, U.; Borkhardt, A.; Chanda, S.K.;\nWalker, J.; Soden, R.; et al. Hoxa9 and Meis1 Are Key Targets for MLL-ENL-Mediated Cellular Immortalization.\nMol. Cell. Biol. 2004, 24, 617–628. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 308,
-    "paragraph": "20. Guo, H.; Chu, Y.; Wang, L.; Chen, X.; Chen, Y.; Cheng, H.; Zhang, L.; Zhou, Y.; Yang, F.C.; Cheng, T.; et al.\nPBX3 is essential for leukemia stem cell maintenance in MLL-rearranged leukemia. Int. J. Cancer 2017, 141,\n324–335. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 309,
-    "paragraph": "21. Prange, K.H.M.; Mandoli, A.; Kuznetsova, T.; Wang, S.Y.; Sotoca, A.M.; Marneth, A.E.; Van Der Reijden, B.A.;\nStunnenberg, H.G.; Martens, J.H.A. MLL-AF9 and MLL-AF4 oncofusion proteins bind a distinct enhancer\nrepertoire and target the RUNX1 program in 11q23 acute myeloid leukemia. Oncogene 2017, 36, 3346–3356.\n[CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 310,
-    "paragraph": "23. Van Der Linden, M.H.; Willekes, M.; Roon, E.; Seslija, L.; Schneider, P.; Pieters, R.; Stam, R.W. MLL\nfusion-driven activation of CDK6 potentiates proliferation in MLL-rearranged infant ALL. Cell Cycle 2014,\n13, 834–844. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 311,
-    "paragraph": "24. Bindels, E.M.J.; Havermans, M.; Lugthart, S.; Erpelinck, C.; Wocjtowicz, E.; Krivtsov, A.V.; Rombouts, E.;\nArmstrong, S.A.; Taskesen, E.; Haanstra, J.R.; et al. EVI1 is critical for the pathogenesis of a subset of\nMLL-AF9-rearranged AMLs. Blood 2012, 119, 5838–5849. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 312,
-    "paragraph": "26. Wang, Q.F.; Wu, G.; Mi, S.; He, F.; Wu, J.; Dong, J.; Luo, R.T.; Mattison, R.; Kaberlein, J.J.; Prabhakar, S.; et al.\nMLL fusion proteins preferentially regulate a subset of wild-type MLL target genes in the leukemic genome.\nBlood 2011, 117, 6895–6905. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 313,
-    "paragraph": "27. Takacova, S.; Luzna, P.; Stranecky, V.; Divoky, V. The Potential Role of the Six1/Eya1 Pathway in the\nEstablishment of Leukemia Stem Cells in MLL-ENL—Induced Leukemia. Blood 2011, 118, 1362. [CrossRef]\n28. Arai, S.; Yoshimi, A.; Shimabe, M.; Ichikawa, M.; Nakagawa, M.; Imai, Y.; Goyama, S.; Kurokawa, M. Evi-1 is\na transcriptional target of mixed-lineage leukemia oncoproteins in hematopoietic stem cells. Blood 2011, 117,\n6304–6314. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 314,
-    "paragraph": "29. Placke, T.; Faber, K.; Nonami, A.; Putwain, S.L.; Salih, H.R.; Heidel, F.H.; Krämer, A.; Root, D.E.; Barbie, D.A.;\nKrivtsov, A.V.; et al. Requirement for CDK6 in MLL-rearranged acute myeloid leukemia. Blood 2014, 124,\n13–23. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 315,
-    "paragraph": "30. Corral, J.; Lavenir, I.; Impey, H.; Warren, A.J.; Forster, A.; Larson, T.A.; Bell, S.; McKenzie, A.N.J.; King, G.;\nRabbitts, T.H. An MII-AF9 fusion gene made by homologous recombination causes acute leukemia in\nchimeric mice: A method to create fusion oncogenes. Cell 1996, 85, 853–861. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 316,
-    "paragraph": "31. Dobson, C.L.; Warren, A.J.; Pannell, R.; Forster, A.; Lavenir, I.; Corral, J.; Smith, A.J.H.; Rabbitts, T.H.\nThe Mll-AF9 gene fusion in mice controls myeloproliferation and speciﬁes acute myeloid leukaemogenesis.\nEMBO J. 1999, 18, 3564–3574. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 317,
-    "paragraph": "32. Chen, W.; Li, Q.; Hudson, W.A.; Kumar, A.; Kirchhof, N.; Kersey, J.H. Amurine Mll-AF4 knock-in model\nresults in lymphoid and myeloid deregulation and hematologic malignancy. Blood 2006, 108, 669–677.\n[CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 318,
-    "paragraph": "33. Chen, W.; Kumar, A.R.; Hudson, W.A.; Li, Q.; Wu, B.; Staggs, R.A.; Lund, E.A.; Sam, T.N.; Kersey, J.H.\nMalignant Transformation Initiated by Mll-AF9: Gene Dosage and Critical Target Cells. Cancer Cell 2008, 13,\n432–440. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 319,
-    "paragraph": "34. Collins, E.C.; Pannell, R.; Simpson, E.M.; Forster, A.; Rabbitts, T.H. Inter-chromosomal recombination of Mll\nand Af9 genes mediated by cre-lox in mouse development. EMBO Rep. 2000, 1, 127–132. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 320,
-    "paragraph": "35. Drynan, L.F.; Pannell, R.; Forster, A.; Chan, N.M.M.; Cano, F.; Daser, A.; Rabbitts, T.H. Mll fusions generated\nby Cre-loxP-mediated de novo translocations can induce lineage reassignment in tumorigenesis. EMBO J.\n2005, 24, 3136–3146. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 321,
-    "paragraph": "36. Krivtsov, A.V.; Twomey, D.; Feng, Z.; Stubbs, M.C.; Wang, Y.; Faber, J.; Levine, J.E.; Wang, J.; Hahn, W.C.;\nGilliland, D.G.; et al. Transformation from committed progenitor to leukaemia stem cell initiated by MLL-AF9.\nNature 2006, 442, 818–822. [CrossRef] [PubMed]\nSomervaille, T.C.P.; Cleary, M.L. Identiﬁcation and characterization of leukemia stem cells in murine MLL-AF9\nacute myeloid leukemia. Cancer Cell 2006, 10, 257–268. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 322,
-    "paragraph": "38. Krivtsov, A.V.; Figueroa, M.E.; Sinha, A.U.; Stubbs, M.C.; Feng, Z.; Valk, P.J.M.; Delwel, R.; Döhner, K.;\nBullinger, L.; Kung, A.L.; et al. Cell of origin determines clinically relevant subtypes of MLL-rearranged\nAML. Leukemia 2013, 27, 852–860. [CrossRef]\nStavropoulou, V.; Kaspar, S.; Brault, L.; Sanders, M.A.; Juge, S.; Morettini, S.; Tzankov, A.; Iacovino, M.;\nLau, I.J.; Milne, T.A.; et al. MLL-AF9 Expression in Hematopoietic Stem Cells Drives a Highly Invasive AML\nExpressing EMT-Related Genes Linked to Poor Outcome. Cancer Cell 2016, 30, 43–58. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 323,
-    "paragraph": "40. Chen, X.; Burkhardt, D.B.; Hartman, A.A.; Hu, X.; Eastman, A.E.; Sun, C.; Wang, X.; Zhong, M.;\nKrishnaswamy, S.; Guo, S. MLL-AF9 initiates transformation from fast-proliferating myeloid progenitors.\nNat. Commun. 2019, 10, 5767. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 324,
-    "paragraph": "41. Buechele, C.; Breese, E.H.; Schneidawind, D.; Lin, C.H.; Jeong, J.; Duque-Afonso, J.; Wong, S.H.K.; Smith, K.S.;\nNegrin, R.S.; Porteus, M.; et al. MLL leukemia induction by genome editing of human CD34+ hematopoietic\ncells. Blood 2015, 126, 1683–1694. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 325,
-    "paragraph": "42. Breese, E.H.; Buechele, C.; Dawson, C.; Cleary, M.L.; Porteus, M.H. Use of genome engineering to create\npatient speciﬁc MLL translocations in primary human hematopoietic stem and progenitor cells. PLoS ONE\n2015, 10, e0136644. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 326,
-    "paragraph": "44. Maddalo, D.; Manchado, E.; Concepcion, C.P.; Bonetti, C.; Vidigal, J.A.; Han, Y.C.; Ogrodowski, P.; Crippa, A.;\nRekhtman, N.; De Stanchina, E.; et al. In vivo engineering of oncogenic chromosomal rearrangements with\nthe CRISPR/Cas9 system. Nature 2014, 516, 423–427. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 327,
-    "paragraph": "45. Torres, R.; Martin, M.C.; Garcia, A.; Cigudosa, J.C.; Ramirez, J.C.; Rodriguez-Perales, S. Engineering human\ntumour-associated chromosomal translocations with the RNA-guided CRISPR-Cas9 system. Nat. Commun.\n2014, 5, 3964. [CrossRef]\nJiang, J.; Zhang, L.; Zhou, X.; Chen, X.; Huang, G.; Li, F.; Wang, R.; Wu, N.; Yan, Y.; Tong, C.; et al. Induction\nof site-speciﬁc chromosomal translocations in embryonic stem cells by CRISPR/Cas9. Sci. Rep. 2016, 6, 21918.\n[CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 328,
-    "paragraph": "47. Reimer, J.; Knöß, S.; Labuhn, M.; Charpentier, E.M.; Göhring, G.; Schlegelberger, B.; Klusmann, J.H.; Heckl, D.\nCRISPR-Cas9-induced t(11;19)/MLL-ENL translocations initiate leukemia in human hematopoietic progenitor\ncells in vivo. Haematologica 2017, 102, 1558–1566. [CrossRef]\nSchneidawind, C.; Jeong, J.; Schneidawind, D.; Kim, I.S.; Duque-Afonso, J.; Wong, S.H.K.; Iwasaki, M.;\nBreese, E.H.; Zehnder, J.L.; Porteus, M.; et al. MLL leukemia induction by t(9;11) chromosomal translocation\nin human hematopoietic stem cells using genome editing. Blood Adv. 2018, 2, 832–845. [CrossRef]\nJansen, M.W.J.C.; van der Velden, V.H.J.; van Dongen, J.J.M. Eﬃcient and easy detection of MLL-AF4,\nMLL-AF9 and MLL-ENL fusion gene transcripts by multiplex real-time quantitative RT-PCR in TaqMan and\nLightCycler [11,12]. Leukemia 2005, 19, 2016–2018. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 329,
-    "paragraph": "51. Hsu, P.D.; Scott, D.A.; Weinstein, J.A.; Ran, F.A.; Konermann, S.; Agarwala, V.; Li, Y.; Fine, E.J.; Wu, X.;\nShalem, O.; et al. DNA targeting speciﬁcity of RNA-guided Cas9 nucleases. Nat. Biotechnol. 2013, 31, 827–832.\n[CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 330,
-    "paragraph": "52. Metcalf, D.; Glaser, S.P.; Xu, Z.; Di Rago, L.; Mifsud, S. Reversible growth factor dependency and autonomy\nduring murine myelomonocytic leukemia induced by oncogenes. Proc. Natl. Acad. Sci. USA 2013, 110,\n17029–17034. [CrossRef] [PubMed]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 331,
-    "paragraph": "Sasca, D.; Hähnel, P.S.; Szybinski, J.; Khawaja, K.; Kriege, O.; Pante, S.V.; Bullinger, L.; Strand, S.; Strand, D.;\nTheobald, M.; et al. SIRT1 prevents genotoxic stress-induced p53 activation in acute myeloid leukemia. Blood\n2014, 124, 121–133. [CrossRef] [PubMed]\nIkeda, H.; Kanakura, Y.; Tamaki, T.; Kuriu, A.; Kitayama, H.; Ishikawa, J.; Kanayama, Y.; Yonezawa, T.;\nTarui, S.; Griﬃn, J.D. Expression and functional role of the proto-oncogene c-kit in acute myeloblastic\nleukemia cells. Blood 1991, 78, 2962–2968. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 332,
-    "paragraph": "55. Paschka, P.; Marcucci, G.; Ruppert, A.S.; Mrózek, K.; Chen, H.; Kittles, R.A.; Vukosavljevic, T.; Perrotti, D.;\nVardiman, J.W.; Carroll, A.J.; et al. Adverse prognostic signiﬁcance of KIT mutations in adult acute myeloid\nleukemia with inv(16) and t(8;21): A Cancer and Leukemia Group B study. J. Clin. Oncol. 2006, 24, 3904–3911.\n[CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 333,
-    "paragraph": "57. Chang, M.J.; Wu, H.; Achille, N.J.; Reisenauer, M.R.; Chou, C.W.; Zeleznik-Le, N.J.; Hemenway, C.S.;\nZhang, W. Histone H3 Lysine 79 Methyltransferase Dot1 Is Required for Immortalization by MLL Oncogenes.\nCancer Res. 2010, 70, 10234–10242. [CrossRef]\nJeong, J.; Jager, A.; Domizi, P.; Pavel-Dinu, M.; Gojenola, L.; Iwasaki, M.; Wei, M.C.; Pan, F.; Zehnder, J.L.;\nPorteus, M.H.; et al. High-eﬃciency CRISPR induction of t(9;11) chromosomal translocations and acute\nleukemias in human blood stem cells. Blood Adv. 2019, 3, 2825–2835. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 334,
-    "paragraph": "59. Heckl, D.; Kowalczyk, M.S.; Yudovich, D.; Belizaire, R.; Puram, R.V.; McConkey, M.E.; Thielke, A.; Aster, J.C.;\nRegev, A.; Ebert, B.L. Generation of mouse models of myeloid malignancy with combinatorial genetic lesions\nusing CRISPR-Cas9 genome editing. Nat. Biotechnol. 2014, 32, 941–946. [CrossRef]",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 335,
-    "paragraph": "60. O’Connor, C.; Yalla, K.; Salomé, M.; Ananyambica Moka, H.; Gómez Castañeda, E.; Eyers, P.A.; Keeshan, K.\nTrib2 expression in granulocyte-monocyte progenitors drives a highly drug resistant acute myeloid leukaemia\nlinked to elevated Bcl2. Oncotarget 2018, 9, 14977–14992.",
-    "jurnal": "ijms-21-04266.pdf"
-  },
-  {
-    "id": 336,
     "paragraph": "Summary. Rabbit antisera were prepared against mouse leukaemias from several\ninbred strains, and against a mixture of these leukaemias. The potencies of these\nantisera were tested against each of the different leukaemias, and against certain\nnormal cells and tissues.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 337,
+    "id": 283,
     "paragraph": "As determined by immune cytolysis, the potencies of antisera were strongest\nagainst the homologous leukaemias. The potencies against unrelated leukaemias\nwere generally within 50 per cent of those against the homologous leukaemias, with\nsome exceptions. Antisera prepared by injection of a mixture of the leukaemia cells\nshowed remarkably high potencies against all leukaemias tested.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 338,
+    "id": 284,
     "paragraph": "As measured by C fixation, the same antisera showed less specificity for the\nhomologous leukaemias. The potencies of antisera for C fixation on a variety of\nnormal tissues was quite strong, and decreased approximately in the following\norder: testis, kidney, liver, lung, brain, muscle, erythrocytes. For antiserum pre-\npared against DBA/2 leukaemia L1210, the C fixation reaction against normal\nlymph node lymphocytes was about 20 per cent as strong as the reaction against\nthe homologous leukaemia L1210. A hypothesis concerning the mechanism of\nimmune cytolysis is presented to explain these results. Exhaustive absorption of\nanti-L1210 sera with normal DBA/2 tissues produced only a slight increase in anti-\nleukaemia specificity.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 339,
+    "id": 285,
     "paragraph": "INTRODUCTION\nA number of studies on the effect of heterologous antisera on experimental leukaemias\nhave shown mild but significant therapeutic benefits (Mohos and Kidd, 1957; Levi,\nGolden, Zerubavel and Fisher, 1966; Schabel, Skipper, Laster and Thompson, 1966;\nMiller, Molovanu, Kaplan and Tocci, 1968; Hill and Littlejohn, 1970; Mempel and\nThierfelder, 1970; Siegel and Morton, 1970), despite the immunosuppressive nature of\nsuch sera (Witz, Yagi and Pressman, 1968). We recently found that passive therapy with\nantileukaemia sera can give positive results only when the highest possible number of\ncytolytic potency units is administered (Reif and Kim, 1969). To prepare highly potent\nantisera, both immunization schedules and the dependence of the specificity of antisera\non the types of leukaemias injected (Mohos and Kidd, 1957) require investigation. In a\nseparate investigation (Kim and Reif, 1971), we have studied immunization schedules.\nIn the present paper, the requirements for specificity of antisera, in terms of the strain of\n1087",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 340,
+    "id": 286,
     "paragraph": "We previously determined the specificity of rabbit antisera to thymic, splenic and\nleukaemic lymphocytes (Asakuma and Reif, 1968). Cross-reactions between antisera\nprepared against leukaemia cells and normal lymphoid cells, rather than cross-reactions\nbetween antisera prepared against leukaemia cells from different inbred strains, were\nstudied. We found that unabsorbed antisera to leukaemias showed little or no specificity\nagainst leukaemia cells relative to non-thymic lymphocytes, but specificity appeared after\nabsorption with a mixture of liver, kidney, and spleen. Antisera prepared against normal\ntissues were also tested (Asakuma and Reif, 1968).",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 341,
+    "id": 287,
     "paragraph": "In this study, antisera have been prepared against four different leukaemias, against a\nmixture of these leukaemias, and against an ovarian teratoma. These antisera were tested\nagainst each of the various leukaemias and against certain normal tissues. Two assays of\nantibody activity were used: immune cytolysis, and complement fixation.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 342,
+    "id": 288,
     "paragraph": "Leukaemia C is an abbreviation for myeloid leukaemia C1498 II of C57BL/6 mice,\nobtained from Miss Brown of the Children's Cancer Research Foundation, Boston, and\nconverted into the ascites form in our laboratory. Leukaemia M is an abbreviation for\nplasma cell neoplasm MOPC-21A of BALB/c mice, obtained in generation 89 from Dr\nMichael Potter of the National Cancer Institute, and transplanted subcutaneously. The\nC3HeB/Fe lymphosarcoma Gardner originated in a C3H mouse injected with estradiol\nbenzoate (Gardner, Dougherty and Williams, 1944), and was transplanted in the low\nmammary tumour substrain C3HeB/Fe. E6A is an abbreviation for the ovarian teratoma\nE6496 of C3HeB/Fe mice, obtained in ascites form from Dr A. B. Griffen of the Jackson\nLaboratory. Lymphocytic leukaemia L1210 of DBA/2 mice was derived by Law, Dunn,\nBoyle and Miller (1949). Both Gardner and L1210 leukaemias were provided by Mr I.\nWodinsky of Arthur D. Little, Inc. Leukaemia RA9 originated spontaneously in an AKR\nmouse; cells from the enlarged spleen and thymus were initially transplanted in our\nlaboratory in May 1968.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 343,
+    "id": 289,
     "paragraph": "The H-2 genotype of the strains of origin of the various tumours and leukaemias are as\nfollows: C57BL/6, H-2b; BALB/c and DBA/2, H-2d; AKR, C3H and C3HeB/Fe, H-2k\n(Snell and Stimpfling, 1966).",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 344,
+    "id": 290,
     "paragraph": "Rabbits were immunized with mouse tissues by two courses of injection. Each course\nconsisted of one subcutaneous injection of 1-2 ml of tumour cells incorporated in Freund-\nMcDermott complete adjuvant (Reif and Norris, 1960), followed by five to seven intra-\nvenous injections (spaced over 3 weeks) of5 ml of 1 per cent suspensions ofviable leukaemia\ncells in isotonic saline. Antisera were inactivated by heating at 560 for 30 minutes and\nabsorbed with 1/13 volume of AKR plasma, followed by three absorptions, each with 1/10\nvolume of packed mouse erythrocytes for 30 minutes at room temperature, as previously",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 345,
+    "id": 291,
     "paragraph": "Specificity of Antisera against Leukaemias\n1089\ndescribed (Reif and Allen, 1964). Normal rabbit serum (NRS) was inactivated but not\nabsorbed. Antisera were stored in small portions at -200 without preservative.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 346,
+    "id": 292,
     "paragraph": "A small-scale assay system (Reif and Allen, 1964) was used. In outline, each assay tube\ncontained 100,000 viable lymphocytes, suitably absorbed 10 per cent complement (Reif,\n1962), and various dilutions of antiserum. Tubes were incubated for 1 hour at 370 and\nplaced in ice water. For each tube in turn, the supernatant was sucked off the cells that had\nsettled, 0f02 ml of vital dye was added, and 200 cells were classified under the microscope\nas stained or unstained. Results, in percentage of stained cells, were plotted against final\nantiserum concentration (per cent), and the cytolytic titre was read at 50 per cent stained\ncells, with a correction for stained cells in the control tube (Reif, 1962). The potency* of\nan antiserum was expressed as 100 divided by the cytolytic titre obtained in this assay\nsystem (Reif and Allen, 1964).",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 347,
+    "id": 293,
     "paragraph": "In outline, serial doubling dilutions of antiserum were assayed for complement fixation\nwith known numbers of tissue cells, or else with a known wet weight of a tissue homo-\ngenate. Disappearance ofcomplement was determined by the failure ofantibody-sensitized\nsheep erythrocytes, which were added later, to haemolyse. Reaction conditions and\ncontrols were as previously described (Asakuma and Reif, 1968).",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 348,
+    "id": 294,
     "paragraph": "The final concentration of antiserum in the experimental tubes was plotted against per\ncent haemolysis on semilogarithmic paper. From this plot, the C fixation titre of the anti-\nserum was read as the final percentage concentration of antiserum at 50 per cent haemo-\nlysis, after correction for C fixation in control tubes. The C fixation potency* was calcu-\nlated as 100 divided by the C fixation titre (Asakuma and Reif, 1968).",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 349,
+    "id": 295,
     "paragraph": "* The reason for a conversion from 'titre' to 'potency' is that titres are difficult to visualize, since the stronger an\nantiserum the lower its titre. Use of the reciprocal of titre which we have called potency (Reif and Allen, 1964),\nis more meaningful, because the potency increases in direct proportion to the strength of the antiserum. A factor of\n100 is used to make the 'potency' numerically equal to the final dilution of the antiserum.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 350,
+    "id": 296,
     "paragraph": "Antiserum C-yG (third line) was the weakest antiserum tested. While it reacted most\nstrongly with the homologous leukaemia C, the reaction was almost as strong against\nleukaemias Gardner and RA9, which are of different H-2 genotype (both k rather than\nb). The reaction against leukaemia L12 10 of DBA/2 mice was weak. Similarly low poten-\ncies against leukaemia L 1210 were also obtained with other antisera (see below); possible\nreasons for this are given in the Discussion. The reaction of antiserum C-yG with normal\nlymph node lymphocytes (columns 6, 7 and 8) was strongest with the homologous (C57-\nBL/6) cells.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 351,
+    "id": 297,
     "paragraph": "Antiserum TM-yG (fourth line) reacted more strongly against the H-2k leukaemias\nGardner and RA9 than to leukaemia L12 10, which originated in the same strain (H-2d) as\nthe leukaemia against which the antiserum was prepared.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 352,
+    "id": 298,
     "paragraph": "Antiserum G-yG (fifth line) reacted almost as strongly against another H-2k leukaemia,\nRA9, as against the homologous leukaemia cells. The reaction against normal lympho-\ncytes was strongest against those of homologous genotype (column 7). There was little\ncross-reaction with an ovarian teratoma which originated in the same strain. Again, the\nreaction against leukaemia L1210 (which differs in H-2 genotype) was remarkably low.\nAntiserum E6A yG (sixth line) reacted similarly, except that the reaction against the\nhomologous ovarian tumour cells was far stronger. The higher potency seen versus\nleukaemia L1210 may well reflect similarly higher potencies seen in the reactions with\nnormal lymphocytes (columns 6, 7 and 8).",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 353,
+    "id": 299,
     "paragraph": "Specificity of Antisera against Leukaemias\n1093\nAntiserum G-yG (fifth line) reacted more strongly against the homologous leukaemia\nthan against leukaemia C. However, the reactions of this serum, and of Antiserum\nE6A-yG (sixth line), were strongest against leukaemia L1210.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 354,
+    "id": 300,
     "paragraph": "EXHAUSTIVE ABSORPTION OF ANTI-L1210 SERUM\nA potent rabbit antiserum prepared against L1 210 leukaemia cells was absorbed with\n1/4 volume of packed mouse erythrocytes. Portions of this absorbed antiserum (AA) were\nfurther absorbed with lymphocytes (lymph node, splenic and thymic) and once again with\nwashed residues of liver and kidney. The ratio of the number of DBA/2 mice from which\n1: 10,\nthese tissues were derived to the volume of antiserum (ml) varied as follows: (a)\n(b) 1:3, (c) 1:1, (d) 3:1. All absorptions were done for 30 minutes at 370. Each portion of\nseparately absorbed antiserum was tested by immune cytolysis against L1 210 cells, lymph\nnode lymphocytes, and splenic lymphocytes.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 355,
+    "id": 301,
     "paragraph": "Relative to antiserum AA, the mean cytolytic potencies ofportions absorbed according\nto schedules (a), (b), (c) and (d) above were 47, 25, 12 and 5-6 per cent, respectively,\nwhen determined against L1 210 cells. For any portion of antiserum, the cytolytic potency\nagainst L1 210 cells, divided by the cytolytic potency against lymph node lymphocytes,\nwas a measure of the specificity of a particular portion of antiserum against leukaemia cells\nrelative to normal lymphocytes (Reif,\nAllen and McVety, 1965). The values of this\n'specificity ratio' for antiserum portions (a), (b), (c) and (d) were 0 54, 0-72, 0 74 and\n1 26, compared to 0-65 for antiserum AA. The equivalent specificity ratios for the reaction\nagainst L1210 cells relative to splenic lymphocytes were 1 29, 1 38, 1-57 and 2 34, com-\npared to 0 90 for antiserum AA. When compared to the reaction with either lymph node or\nsplenic lymphocytes, a substantial increase in specificity against L1 210 leukaemia cells\nwas thus obtained only with schedule (d), which represents very thorough absorption and\nconcomitantly high loss of cytolytic potency.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 356,
+    "id": 302,
     "paragraph": "DISCUSSION\nHeterologous antisera have long been used for the treatment of human leukaemia\n(Lindstrom, 1927; Brittingham and Chaplin, 1960). While interest has quickened\nrecently (Sekla, Holeckova,Janele, Libnaisky and Hnevkovsky, 1967; Tsirimbas, Pfisterer,\nHornung, Thierfelder, Michlmayr and Stich, 1969; Fernbach, Rossen and Butler, 1970;\nMempel and Thierfelder, 1970), there is no convincing evidence that such sera produce\nor prolong remissions in human leukaemia. The present model study in mice is not con-\ncerned with the in vivo effectiveness of such sera, but helps to answer questions that arise\nin their preparation. For instance, must antisera to human leukaemias be prepared by\nimmunizations of animals with leukaemias of the same HL-A type as the patient to be\ntreated? Can immunization with a mixture of leukaemias produce antisera potent against\nleukaemias of different HL-A types ? Resolution of these questions must await experi-\nmentation in man. However, there is a sufficiently close parallel between the H-2 system",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 357,
+    "id": 303,
     "paragraph": "A. E. Reif and Chung-Ai H. Kim\n1094\nof mice and the HL-A system of man, that work with mice is apt to provide useful sug-\ngestions as to the likely outcome of equivalent work in man.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 358,
+    "id": 304,
     "paragraph": "With few exceptions (Snell and Stimpfling, 1966), allogenic specificities such as H-1 to\nH-l 1, TL and 0 are expressed on the cell surface of the corresponding leukaemias. To\npredict the cross-reactions of antisera prepared against different leukaemias, it must be\nremembered that mouse strains (and therefore also leukaemias) of different H-2 genotype\noften share some H-2 antigens. For instance, leukaemia C (H-2b) shares H-2 specificity\nNo. 5 with leukaemias Gardner and RA9 (both H-2k) and specificities Nos. 6, 14, 27, 28\nand 29 with leukaemia L1210 (H-2d), while L1210 shares specificities Nos. 3 and 8 with\nleukaemias Gardner and RA9 (Snell and Stimpfling, 1966).",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 359,
+    "id": 305,
     "paragraph": "With regard to the two allogenic specificities 6-AKR find O-C3H, we were only able to\ndifferentiate these with heterologous antisera after exhaustive absorptions (Asakama and\nReif, 1968). It seems questionable whether other alloantigens, such as the PC alloantigens\nof plasma cells (Takahashi, Old and Boyse, 1970), can be detected with heterologous anti-\nsera without similarly extensive absorptions. While such alloantigens possess characteristic\norgan distributions, the term 'organ-specific' should probably be reserved for antigens\npresent only in a single organ, or else in cells of closely related type.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 360,
+    "id": 306,
     "paragraph": "Tumour-specific transplantation antigens (Gorer, 1938; Boyse, Old, Stockert and\nShigeno, 1968; Klein, 1969; Watson, Ralph, Sarkar and Cohn, 1970) are relatively weakly\nimmunogenic on allogenic immunization. Nevertheless, the more difficult feat of demon-\nstrating such antigens with heterologous antisera has been accomplished for chronic\nlymphocytic leukaemia (Bentwitch, Cohen, Sulitzeanu, Izak and Weiss, 1970). No\nevidence of specificity to such antigens, nor to the species-specific antigens T, C and F\n(Boyle and Davies, 1966) and MSLA (Shigeno, Hammerling, Arpels, Boyse and Old,\n1968) was obtained here.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 361,
+    "id": 307,
     "paragraph": "In the present study, an antiserum with high cytolytic potency against leukaemias of\nthree different H-2 genotypes was prepared by immunization with a mixture of leukaemia\ncells. Previously, a close correlation between the results of in vitro immune cytolysis and\nin vivo antileukaemia therapy has been found (Mohos and Kidd, 1957; Reif and Kim,\n1969). Therefore, such an antiserum would be expected to be effective in vivo. Finally,\nthe present data suggest that heteroimmunization with a mixture of leukaemia cells from\ndifferent patients might well result in antisera with high in vitro potencies against human\nleukaemias of different HL-A types.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 362,
+    "id": 308,
     "paragraph": "FIG. 1. A molecular model of immune cytolysis. It is suggested that penetration of the cell surface can\noccur only if the complement (C) complex is bound by one (yM) or two (yG) antibody molecules\nattached to closely-spaced antigen sites, and if the C complex is oriented to make optimal contact with\nthe cell surface. Antibody binding is illustrated (a) without binding of C, (b) with lytically ineffective\nbinding of C, and (c) with lytically effective binding of C.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 363,
+    "id": 309,
     "paragraph": "surface are necessary before C1 can be fixed by any type of antibody. In the case of yM, a\nsingle molecule would attach to two adjacent antigen sites (Fig. 1), while the unusual\nproperty of 'unusual' yG (Frank and Gaither, 1970) might be a flexible structure that\npermits two-point contact with the cell surface.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 364,
+    "id": 310,
     "paragraph": "The above work suggests that lytically effective binding of the C complex can occur only\nwhen two antigen sites are relatively closely spaced. However, fixation of C1 to cell-\nbound molecules of antibodies does not guarantee either binding of the remaining C com-\nponents or sufficient damage of the membrane to lyse the cell (Linscott, 1970). The effi-",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 365,
+    "id": 311,
     "paragraph": "A. E. Reif and Chung-Ai H. Kim\n1096\nciency of this latter step is 30-50 per cent with yG-sensitized sheep erythrocytes (Rapp and\nBorsos, 1966), but only about 0*03 per cent with yM-sensitized mouse leukaemia cells\n(Borsos, Colten, Spalter, Rogentine, and Rapp, 1968), a 1000-fold difference. To explain\nthese data as well as our own, it is suggested that immune lysis can occur only when the\nantibody-bound complement complex is correctly oriented for optimal (and presumably\nclose) contact with the cell surface. The illustration of this (Fig. 1) has been arranged to fit\ncurrent concepts on the structure of antibody molecules (Svehag, Chesebro and Bloth,\n1967; Green, 1969) and the attachment of C1 to the Fc portion of yG or yM antibodies\n(Weiser, Myrvik and Pearsall, 1969).",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 366,
+    "id": 312,
     "paragraph": "According to the above explanation, the present anomalous data with L1210 would be\nexplicable on the basis of a lower surface antigen concentration on L 1210 cells relative to\nother mouse leukaemias: sufficient L1210 antigen sites would be available to fix 50 per\ncent of the small quantity of C added in the C fixation test (especially since 10 times more\ncells were used than in the cytolysis assay), but would be insufficient to provide as ready\nimmune cytolysis, with its more stringent requirement for closely-spaced antigen sites.\nSince different cell types possess widely different sensitivites to non-immune lysis, implying\ndifferences in the strength of different cell surfaces (Reif and Allen, 1966), the sensitivities\nto immune lysis may also depend on this physical characteristic.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 367,
+    "id": 313,
     "paragraph": "BENTWITCH, Z., COHEN, I., SULrrZEANU, D., IZAK, G.\nand WEwss, D. W. (1970). 'Antigenicity of lympho-\ncytes from chronic lymphocytic patients and from\nnormal newborns.' Proc. Amer. Ass. Cancer Res., 11, 7.\nBORSOS, T., COLTEN, H. R., SPALTER, J. S., ROGEN-\nTINE, N. and RAPP, H. J. (1968). 'The C'la fixation\nand transfer test: examples of its applicability to the\ndetection and enumeration of antigens and anti-\nbodies at cell surfaces.'_7. Immunol., 101, 392.\nBoRsos, T. and RAPP, H. J. (1965a). 'Complement\nfixation on cell surfaces by 19S and 7S antibodies.'\nScience, 150, 505.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 368,
+    "id": 314,
     "paragraph": "BoRsos, T. and RAPP, H. J. (1965b). 'Hemolysin\ntitration based on fixation of the activated first com-\nponent of complement: evidence that one molecule\nof hemolysin suffices to sensitize an erythrocyte.'J.\nImmunol., 95, 559.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 369,
+    "id": 315,
     "paragraph": "BRrrINGM4, T. E. and CHAPLIN, H., JR (1960).\n'Production of a human \"antileukemic leukocyte\"\nserum and its therapeutic trial.' Cancer, 13, 412.\nFERNBACH, D. J., ROSSEN, R. D. and BUTLER, W. T.\n(1970). 'Studies of antilymphocyte globulin (ALG)",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 370,
+    "id": 316,
     "paragraph": "FRNK, M. M. and GAITHER, T. A. (1970). 'Comple-\nment fixation by a single molecule of yG hemolysin.'\nJ. Immunol., 104, 1458.\nGARDNER, W. U., DOUGHERTY, T. F. and WILLIAMS,\nW. L. (1944). 'Lymphoid tumors in mice receiving\nsteroid hormones.' Cancer Res., 4, 73.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 371,
+    "id": 317,
     "paragraph": "LINSCOTT, W. D. (1970). 'An antigen density effect on\nthe hemolytic efficiency of complement.' J. Im-\nmunol., 104, 1307.\nMAYER, M. M. (1961). 'Complement and complement\nfixation.' Experimental Immunochemistry (Ed. by E. A.\nKabat), 2nd edn, p. 133. Thomas, Springfield.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 372,
+    "id": 318,
     "paragraph": "MOHOS, S. C. and KIDD, J. G. (1957). 'Effects of\nvarious immune rabbit serums on the cells of several\ntransplanted mouse lymphomas in vitro and in\nvivo.'_7. exp. Med., 105, 233.\nRAPP, H. J. and BORSOS, T. (1966). 'Forssman antigen\nand antibody: preparation of water soluble antigen\nand measurement of antibody concentration by pre-\ncipitin analysis, by C'la fixation and by hemolytic\nactivity.'7. Immunol., 96, 913.\nascites tumors.'_7. Immunol., 89, 849.\nREIF, A. E. (1969). 'Batch preparation of rabbit yG\nglobulin with DEAE-Cellulose.' Immunochemistiy, 6,\n723.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 373,
+    "id": 319,
     "paragraph": "REIF, A. E. and ALLEN, J. M. (1966). 'The fragility of\nnormal and leukemic lymphocytes of AKR mice:\na study of cell injury by physical agents.' Cancer Res.,\n26, 131.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 374,
+    "id": 320,
     "paragraph": "1097\nSCHABEL, F. M., JR, SKIPPER, H. E., LASTER, W. R.,\nJR and THOMPSON, S. A. (1966). 'Experimental\nevaluation of potential anticancer agents. XX.\nDevelopment of immunity to leukemia L1210 in\nBDF1 mice and effects of therapy.' Cancer Chem. Rep.,\n50, 55.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 375,
+    "id": 321,
     "paragraph": "WATSON, J., RALPH, P., SARKAR, S. and COHN, M.\n(1970). 'Leukemia viruses associated with mouse\nmyeloma cells.' Proc. nat. Acad. Sci. (Wash.), 66, 344.\nWEISER, R. S., MYRVIK, Q. N. and PEARSALL, N. N.\n(1969). Fundamentals of Immunology, p. 25. Lea &\nFebiger, Philadelphia, Pa.",
     "jurnal": "immunology00365-0229.pdf"
   },
   {
-    "id": 376,
+    "id": 322,
     "paragraph": "Advances in the classification of acute leukaemias have led to improved outcomes for a substantial \nfraction of patients. However, chemotherapy resistance remains a major problem for specific \nsubsets of acute leukaemias. Here, we propose that a molecularly distinct subtype of acute \nleukaemia with shared myeloid and T cell lymphoblastic features, which we term acute myeloid/T-\nlymphoblastic leukaemia (AMTL), is divided across 3 diagnostic categories owing to variable \nexpression of markers deemed to be defining of myeloid and T-lymphoid lineages, such as \nmyeloperoxidase and CD3. This proposed diagnostic group is supported by i) retained myeloid \ndifferentiation potential during early T cell lymphoid development, ii) recognition that some cases \nof acute myeloid leukaemia (AML) harbour hallmarks of T cell development, such as T-cell \nreceptor gene rearrangements and iii) common gene mutations in subsets of AML and T cell acute \nlymphoblastic leukaemia (T-ALL), including WT1, PHF6, RUNX1 and BCL11B. This proposed \ndiagnostic entity overlaps with early T cell precursor (ETP) T-ALL and T cell/myeloid mixed \nphenotype acute leukaemias (MPALs), and also includes a subset of leukaemias currently \nclassified as AML with features of T-lymphoblastic development. The proposed classification of \nAMTL as a distinct entity would enable more precise prospective diagnosis and permit the \ndevelopment of improved therapies for patients whose treatment is inadequate with current \napproaches.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 377,
+    "id": 323,
     "paragraph": "*Correspondence to: Professor Alex Kentsis, Memorial Sloan-Kettering Cancer Center, Sloan Kettering Institute, 1275 York Ave, Box \n223, New York, NY 10065-6007, USA, Tel: 1-646-888-2593, kentsisresearchgroup@gmail.com And Dr. Alejandro Gutierrez, \nDivision of Hematology/Oncology, Boston Children's Hospital, Dana-Farber Cancer Institute, Boston, Massachusetts, USA. \nalejandro.gutierrez@childrens.harvard.edu.\nDR. ALEJANDRO GUTIERREZ (Orcid ID : 0000-0002-0249-9007)\nPROF. ALEX KENTSIS (Orcid ID : 0000-0002-8063-9191)",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 378,
+    "id": 324,
     "paragraph": "Acute leukaemias are aggressive neoplasms characterized by the pathological accumulation \nof immature haematopoietic progenitors. Improvements in clinical outcomes for patients \nwith acute leukaemias treated with modern chemotherapy regimens have been variable. The \nintroduction of molecularly targeted therapies has had a major impact on a small subset of \ngenetically-defined acute leukaemias. For example, arsenic trioxide and retinoic acid, which \ntarget the PML-RARA fusion oncoprotein via distinct mechanisms (de The, 2015), can now \ncure the majority of patients with acute promyelocytic leukaemia without exposure to \ncytotoxic chemotherapies (Lo-Coco et al, 2013). However, clinical outcomes for a \nsubstantial fraction of acute leukaemias have seen little improvement despite the application \nof treatment regimens that are among the most intensive and toxic used for any disease. \nConsequently, improving clinical outcomes for these patients will require linking an \nimproved molecular understanding to the application of effective targeted therapies.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 379,
+    "id": 325,
     "paragraph": "Acute leukaemias have traditionally been classified based on the normal cell types most \nclosely resembling the leukaemic cell population. Lymphoblastic leukaemias are those with \nevidence of differentiation arrest at immature stages of B- or T-cell lymphoid development, \nwhereas acute myeloid leukaemias encompass malignancies with immunophenotypic \nfeatures that lie along a broad spectrum of haematopoietic progenitors, ranging from \nminimally differentiated leukaemias to those with evidence of granulocytic, monocytic, \nerythroid or megakaryocytic differentiation. Although this classification scheme is intuitive, \nlineage assignment is complicated by the high frequency of aberrant differentiation states in \nacute leukaemias. Indeed, the simultaneous expression of markers that are not known to be \nco-expressed in any normal haematopoietic progenitor is common. To address the \nrequirement for consistent diagnostic criteria for the successful performance and \ninterpretation of clinical trials, the World Health Organization (WHO) has devised a \nclassification scheme that allows most acute leukaemias to be unambiguously classified as \nspecific diagnostic entities, which has been regularly revised (Swerdlow et al 2008; Arber et \nal, 2016).",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 380,
+    "id": 326,
     "paragraph": "The genetics of leukaemia are beginning to be incorporated into the WHO classification, \nwith increasing weight being given to specific chromosomal translocations and, in some \ncases, somatic gene mutations, as disease-defining genetic lesions (Arber et al, 2016). Thus, \nthe presence of a characteristic genetic feature can define a disease, independent of the \nphenotypic lineage which can be difficult to assign in practice. For example, leukaemias \nwith FGFR1 translocations that can present with T cell lymphoblastic or myeloid markers \nare defined as a single diagnostic entity, regardless of the immunophenotype of the \npresenting leukaemic cells (Arber et al, 2016; Macdonald et al, 2002). Similarly, acute \nmyeloid leukaemia (AML) cases with t(8;21) translocations exhibit aberrant expression of \nCD19, a marker typically associated with B cell lymphoid malignancies, due to lineage-\ninappropriate PAX5 expression induced by the RUNX1-RUNX1T1 (previously termed \nAML1-ETO) oncogene (Walter et al, 2010). While we anticipate that genomic classification \nwill have an increasingly important role in defining leukaemia subsets in the future, the",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 381,
+    "id": 327,
     "paragraph": "current diagnostic classification for most acute leukaemias does not rely on genetic \nmutations. Thus, phenotypic lineage assignment remains a central component of diagnostic \nclassification and treatment assignment for most patients with acute leukaemia.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 382,
+    "id": 328,
     "paragraph": "The current WHO classification considers strong expression of a small number of \nimmunophenotypic markers to be lineage-assigning: myeloperoxidase (MPO) or at least two \nmonocytic markers (CD11c, CD14, CD64 or lysozyme) for myeloid lineage; surface or \ncytoplasmic CD3 expression for T cell lineage; and CD19 with at least one additional B cell \nmarker (CD79a, cytoplasmic CD22, or CD10) for B cell lineage (Arber et al, 2016). While \nthe specificity of these markers is widely agreed upon, some prominent clinical trials groups \nuse subtly different criteria for lineage assignment (Dworzak et al, 2017). Nevertheless, it is \nrecognized that these classification schemes are imperfect, and the strict application of the \nWHO criteria for lineage assignment is not required to make a diagnosis of AML, T cell \nacute lymphoblastic leukaemia (T-ALL) or B cell acute lymphoblastic leukaemia (B-ALL) \nunless a diagnosis of mixed phenotype acute leukaemia (MPAL) is also being considered \n(Arber et al, 2016). Thus, while MPALs that meet formal criteria for assignment to two \ndistinct lineages are very rare, leukaemias classified as AML, T-ALL or B-ALL based on \ntheir predominant morphology and immunophenotype commonly co-express markers that \nindicate aberrant differentiation towards another lineage.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 383,
+    "id": 329,
     "paragraph": "The classical model of haematopoiesis postulates an early binary split between common \nmyeloid and lymphoid progenitors that subsequently give rise to both B- and T-cell \nlymphocytes. However, more recent work using clonal tracking assays has shown the \nexistence of progenitors that retain T cell/myeloid or B cell/myeloid bi-lineage potential. By \ncontrast, individual progenitors whose potential is restricted to T cell and B cell (but not \nmyeloid) lineages have been difficult to identify (Kawamoto et al, 2010). These findings fit \nthe clinical observation that MPALs most commonly present with B cell/myeloid or T cell/\nmyeloid marker co-expression, whereas B/T cell MPALs are very rare (Matutes et al, 2011).",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 384,
+    "id": 330,
     "paragraph": "Here, we propose AMTL as a molecularly distinct subtype of acute leukaemias associated \nwith shared T cell lymphoid and myeloid features. Expression of markers deemed to be \ndefining of the myeloid and T cell lymphoid lineages, including myeloperoxidase and CD3, \nis variable in this disease, resulting in its separation across three diagnostic categories in the \ncurrent WHO classification scheme: early T cell precursor (ETP) T-ALL, T/myeloid MPAL, \nand a specific subset of AML harbouring hallmarks of T-lymphoblastic differentiation.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 385,
+    "id": 331,
     "paragraph": "This proposed diagnostic entity overlaps with subsets of ETP T-ALL, which is characterized \nby differentiation arrest at early stages of T cell development. While a number of biomarkers \nhave been described to identify these cases (Coustan-Smith et al, 2009; Gutierrez et al, 2010; \nHomminga et al, 2011; Zuurbier et al, 2014), these are most commonly defined clinically \nusing an immunophenotypic classifier that includes absent expression of CD1a and CD8, \nCD5 expression that is substantially lower than that of normal peripheral blood T cells, and \nthe presence of one or more markers of myeloid or haematopoietic progenitors (CD117,",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 386,
+    "id": 332,
     "paragraph": "CD34, HLA-DR, CD13, CD33, CD11b or CD65) (Conter et al, 2016; Coustan-Smith et al, \n2009; Patrick et al, 2014). Currently, ETP is classified as a subtype of T-ALL due to the \nexpression of CD3, but has a genetic mutational profile that is similar to those observed in \nmyeloid malignancies, such as AML, whereas mutations characteristic of other subtypes of \nT-ALL, such as CDKN2A deletions, are less common (Gutierrez et al, 2010; Van \nVlierberghe et al, 2011a; Zhang et al, 2012).",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 387,
+    "id": 333,
     "paragraph": "While similarities between ETP T-ALL and AML have been previously recognized (Van \nVlierberghe et al, 2011a; Zhang et al, 2012; Zuurbier et al, 2014), we propose that the \nbiological overlap of AMTL is not with AML per se, but with a specific subset of AML \ncases that also exhibit T cell lymphoid features. Namely, a subset of AMLs has long been \nrecognized to harbour clonal T-cell receptor (TCR) or immunoglobulin (Ig) gene \nrearrangements, indicating activity of the RAG recombinase that is responsible for \ngenerating somatic V(D)J recombination at these loci at specific stages of lymphoid \ndevelopment (Norton et al, 1987; Parreira et al, 1992; Schmidt et al, 1992). These AML \ncases can also express the lymphoid marker terminal deoxynucleotidyltransferase (TdT, also \nknown as DNTT), which generates diversity at the TCR and Ig genes by mutating the \njunctions of rearrangements during V(D)J recombination (Drexler et al, 1993; Patel et al, \n2013). Non-megakaryoblastic AMLs with TCR rearrangements typically co-express \nphenotypic markers of T-lymphoblastic differentiation, such as CD7, CD2 and CD4 \n(Schmidt et al, 1992). We postulate that this is the subset of AMLs that also harbour \nmutations that are commonly observed in a distinct subset of T-ALL, including WT1, PHF6, \nRUNX1 and BCL11B (The Cancer Genome Atlas Research Network, 2013; Della Gatta et \nal, 2012; Ding et al, 2012; Klco et al, 2015; Tosello et al, 2009; Van Vlierberghe et al, 2010; \nVan Vlierberghe et al, 2011b; Zhang et al, 2012). Thus, a similar group of acute leukaemias \nexhibit shared features of myeloid and T cell lymphoid differentiation, and shared genetic \nmutations, which will need to be formally assessed in future studies.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 388,
+    "id": 334,
     "paragraph": "Transformation of normal haematopoietic progenitors with T-lymphoblastic and \nmyeloid bi-lineage potential. While studies of endogenous haematopoiesis have \nrevealed limited evidence of a putative normal progenitor whose fate is restricted \nto T-lymphoid and myeloid lineages, the identification of such a progenitor may \nhave been hindered by differences in the lifespan of mature myeloid versus T-\nlymphoid cells. Nevertheless, even if a normal progenitor whose differentiation \nfate is restricted to T-lymphocytes and myeloid cells is lacking, such leukaemias \ncan arise from cells that retain multi-lineage potential, even though their fate is \nnormally restricted to a single lineage by microenvironmental signals. Immature \nintrathymic T cell progenitors at early double-negative stages of differentiation \nrepresent one potential cell of origin for such leukaemias. Indeed, the most \nimmature intrathymic T cell progenitors retain myeloid (but not B-lymphoid)",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 389,
+    "id": 335,
     "paragraph": "To a first approximation, AMTL can be defined as acute leukaemias that fit the diagnostic \ncriteria of ETP T-ALL or of T/myeloid MPALs, together with AMLs with clonal TCR gene \nrearrangements and evidence of T-lymphoid differentiation (CD3, CD7, CD2 or CD4 \nexpression). However, we note that aberrant expression of CD4 and CD7 is relatively \ncommon in acute megakaryoblastic leukaemia (AMKL), a subtype of AML that is \nmolecularly distinct from AMTL (de Rooij et al, 2017). Therefore, AMKL should be \nexcluded from the definition of AMTL, based on absence of megakaryblastic morphology \nand expression of the platelet markers CD41 or CD61. Thus, our initial proposal for AMTL \nas a diagnostic entity includes all cases currently classified as ETP T-ALL and T/myeloid \nMPALs, together with the subset of AMLs with TCR rearrangements and expression of T-\nlymphoblastic markers.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 390,
+    "id": 336,
     "paragraph": "Given the variability in cell surface marker expression in acute leukaemias, we propose that \nclinical genomic profiling will enhance the classification of AMTL as a specific diagnostic \nentity. Indeed, ETP T-ALLs harbour mutations of several genes that are commonly mutated \nin myeloid neoplasms, such as RAS family members, ETV6, MEF2C and EZH2, but whose \nmutations are rare in other T-ALL subtypes, (Homminga et al, 2011; Van Vlierberghe et al,",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 391,
+    "id": 337,
     "paragraph": "2011a; Zhang et al, 2012; Zuurbier et al, 2014). We also suggest that the subset of AML \ncases harbouring clonal TCR gene rearrangements should demonstrate substantial overlap \nwith those AML cases harbouring mutations that are common in T-ALL, such as WT1, \nRUNX1, PHF6 and BCL11B (The Cancer Genome Atlas Research Network, 2013; Ding et \nal, 2012; Klco et al, 2015; Zhang et al, 2012). We anticipate that future investigation will \nlead to an improved classifier of AMTL based on both immunophenotypic and genetic \ndiagnostic markers.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 392,
+    "id": 338,
     "paragraph": "We thank Misha Roshal, Mark Fleming, and Peter Steinherz for helpful discussions. This work was supported by \nNIH R01 CA204396 and CA193651, and P30 CA008748. A.G. and A.K. are Damon Runyon Clinical Investigators.",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 393,
+    "id": 339,
     "paragraph": "Wood B, DeAngelo DJ, Stone R, Harris M, Gutierrez A, Kelliher MA, Letai A. Maturation stage of \nT-cell acute lymphoblastic leukemia determines BCL-2 versus BCL-XL dependence and sensitivity \nto ABT-199. Cancer Discov. 2014; 4:1074–1087. [PubMed: 24994123]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 394,
+    "id": 340,
     "paragraph": "Barisone E, Lo Nigro L, Santoro N, Ziino O, Pession A, Testi AM, Micalizzi C, Casale F, Pierani P, \nCesaro S, Cellini M, Silvestri D, Cazzaniga G, Biondi A, Basso G. Early T-cell precursor acute \nlymphoblastic leukaemia in children treated in AIEOP centres with AIEOP-BFM protocols: a \nretrospective analysis. Lancet Haematol. 2016; 3:e80–86. [PubMed: 26853647]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 395,
+    "id": 341,
     "paragraph": "Coustan-Smith E, Mullighan CG, Onciu M, Behm FG, Raimondi SC, Pei D, Cheng C, Su X, Rubnitz \nJE, Basso G, Biondi A, Pui CH, Downing JR, Campana D. Early T-cell precursor leukaemia: a \nsubtype of very high-risk acute lymphoblastic leukaemia. Lancet Oncol. 2009; 10:147–156. \n[PubMed: 19147408]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 396,
+    "id": 342,
     "paragraph": "de Rooij JD, Branstetter C, Ma J, Li Y, Walsh MP, Cheng J, Obulkasim A, Dang J, Easton J, Verboon \nLJ, Mulder HL, Zimmermann M, Koss C, Gupta P, Edmonson M, Rusch M, Lim JY, Reinhardt K, \nPigazzi M, Song G, Yeoh AE, Shih LY, Liang DC, Halene S, Krause DS, Zhang J, Downing JR, \nLocatelli F, Reinhardt D, van den Heuvel-Eibrink MM, Zwaan CM, Fornerod M, Gruber TA. \nPediatric non-Down syndrome acute megakaryoblastic leukemia is characterized by distinct \ngenomic subsets with varying outcomes. Nat Genet. 2017; 49:451–456. [PubMed: 28112737]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 397,
+    "id": 343,
     "paragraph": "Keersmaecker K, Sole X, Xu L, Paietta E, Racevskis J, Wiernik PH, Rowe JM, Meijerink JP, \nCalifano A, Ferrando AA. Reverse engineering of TLX oncogenic transcriptional networks \nidentifies RUNX1 as tumor suppressor in T-ALL. Nat Med. 2012; 18:436–440. [PubMed: \n22366949]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 398,
+    "id": 344,
     "paragraph": "Ding L, Ley TJ, Larson DE, Miller CA, Koboldt DC, Welch JS, Ritchey JK, Young MA, Lamprecht T, \nMcLellan MD, McMichael JF, Wallis JW, Lu C, Shen D, Harris CC, Dooling DJ, Fulton RS, \nFulton LL, Chen K, Schmidt H, Kalicki-Veizer J, Magrini VJ, Cook L, McGrath SD, Vickery TL, \nWendl MC, Heath S, Watson MA, Link DC, Tomasson MH, Shannon WD, Payton JE, Kulkarni S, \nWestervelt P, Walter MJ, Graubert TA, Mardis ER, Wilson RK, DiPersio JF. Clonal evolution in \nrelapsed acute myeloid leukaemia revealed by whole-genome sequencing. Nature. 2012; 481:506–\n510. [PubMed: 22237025]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 399,
+    "id": 345,
     "paragraph": "Wunderlich M, Link KA, Mizukawa B, Grimes HL, Kurokawa M, Liu PP, Huang G, Mulloy JC. \nTranscription factor RUNX1 promotes survival of acute myeloid leukemia cells. J Clin Invest. \n2013; 123:3876–3888. [PubMed: 23979164]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 400,
+    "id": 346,
     "paragraph": "Gutierrez A, Dahlberg SE, Neuberg DS, Zhang J, Grebliunaite R, Sanda T, Protopopov A, Tosello V, \nKutok J, Larson RS, Borowitz MJ, Loh ML, Ferrando AA, Winter SS, Mullighan CG, Silverman \nLB, Chin L, Hunger SP, Sallan SE, Look AT. Absence of biallelic TCRgamma deletion predicts \nearly treatment failure in pediatric T-cell acute lymphoblastic leukemia. J Clin Oncol. 2010; \n28:3816–3823. [PubMed: 20644084]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 401,
+    "id": 347,
     "paragraph": "Gladdines J, Kooi C, Klous P, van Vlierberghe P, Ferrando AA, Cayuela JM, Verhaaf B, Beverloo \nHB, Horstmann M, de Haas V, Wiekmeijer AS, Pike-Overzet K, Staal FJ, de Laat W, Soulier J, \nSigaux F, Meijerink JP. Integrated transcript and genome analyses reveal NKX2-1 and MEF2C as",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 402,
+    "id": 348,
     "paragraph": "Kawamoto H, Ikawa T, Masuda K, Wada H, Katsura Y. A map for lineage restriction of progenitors \nduring hematopoiesis: the essence of the myeloid-based model. Immunol Rev. 2010; 238:23–36. \n[PubMed: 20969582]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 403,
+    "id": 349,
     "paragraph": "Kim KH, Kim W, Howard TP, Vazquez F, Tsherniak A, Wu JN, Wang W, Haswell JR, Walensky LD, \nHahn WC, Orkin SH, Roberts CW. SWI/SNF-mutant cancers depend on catalytic and non-\ncatalytic activity of EZH2. Nat Med. 2015; 21:1491–1496. [PubMed: 26552009]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 404,
+    "id": 350,
     "paragraph": "M, Lamprecht TL, Helton NM, Duncavage EJ, Payton JE, Baty J, Heath SE, Griffith OL, Shen D, \nHundal J, Chang GS, Fulton R, O'Laughlin M, Fronick C, Magrini V, Demeter RT, Larson DE, \nKulkarni S, Ozenberger BA, Welch JS, Walter MJ, Graubert TA, Westervelt P, Radich JP, Link DC, \nMardis ER, DiPersio JF, Wilson RK, Ley TJ. Association Between Mutation Clearance After \nInduction Therapy and Outcomes in Acute Myeloid Leukemia. JAMA. 2015; 314:811–822. \n[PubMed: 26305651]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 405,
+    "id": 351,
     "paragraph": "Di Bona E, Specchia G, Sica S, Divona M, Levis A, Fiedler W, Cerqui E, Breccia M, Fioritoni G, \nSalih HR, Cazzola M, Melillo L, Carella AM, Brandts CH, Morra E, von Lilienfeld-Toal M, \nHertenstein B, Wattad M, Lubbert M, Hanel M, Schmitz N, Link H, Kropp MG, Rambaldi A, La \nNasa G, Luppi M, Ciceri F, Finizio O, Venditti A, Fabbiano F, Dohner K, Sauer M, Ganser A, \nAmadori S, Mandelli F, Dohner H, Ehninger G, Schlenk RF, Platzbecker U, Gruppo Italiano \nMalattie Ematologiche dA, German-Austrian Acute Myeloid Leukemia Study G, Study Alliance \nL. Retinoic acid and arsenic trioxide for acute promyelocytic leukemia. N Engl J Med. 2013; \n369:111–121. [PubMed: 23841729]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 406,
+    "id": 352,
     "paragraph": "Matutes E, Pickl WF, Van't Veer M, Morilla R, Swansbury J, Strobl H, Attarbaschi A, Hopfinger G, \nAshley S, Bene MC, Porwit A, Orfao A, Lemez P, Schabath R, Ludwig WD. Mixed-phenotype \nacute leukemia: clinical and laboratory features and outcome in 100 patients defined according to \nthe WHO 2008 classification. Blood. 2011; 117:3163–3171. [PubMed: 21228332]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 407,
+    "id": 353,
     "paragraph": "Norton JD, Campana D, Hoffbrand AV, Janossy G, Coustan-Smith E, Jani H, Yaxley JC, Prentice HG. \nRearrangement of immunoglobulin and T cell antigen receptor genes in acute myeloid leukemia \nwith lymphoid-associated markers. Leukemia. 1987; 1:757–761. [PubMed: 3500372]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 408,
+    "id": 354,
     "paragraph": "Ogiwara H, Sasaki M, Mitachi T, Oike T, Higuchi S, Tominaga Y, Kohno T. Targeting p300 Addiction \nin CBP-Deficient Cancers Causes Synthetic Lethality by Apoptotic Cell Death due to Abrogation \nof MYC Expression. Cancer Discov. 2016; 6:430–445. [PubMed: 26603525]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 409,
+    "id": 355,
     "paragraph": "H, Dohner H, Gaidzik VI, Galinsky I, Golfman LS, Haferlach T, Harutyunyan KG, Hu J, Leverson \nJD, Marcucci G, Muschen M, Newman R, Park E, Ruvolo PP, Ruvolo V, Ryan J, Schindela S, \nZweidler-McKay P, Stone RM, Kantarjian H, Andreeff M, Konopleva M, Letai AG. Selective \nBCL-2 inhibition by ABT-199 causes on-target cell death in acute myeloid leukemia. Cancer \nDiscov. 2014; 4:362–375. [PubMed: 24346116]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 410,
+    "id": 356,
     "paragraph": "Patel KP, Khokhar FA, Muzzafar T, James You M, Bueso-Ramos CE, Ravandi F, Pierce S, Medeiros \nLJ. TdT expression in acute myeloid leukemia with minimal differentiation is associated with \ndistinctive clinicopathological features and better overall survival following stem cell \ntransplantation. Mod Pathol. 2013; 26:195–203. [PubMed: 22936064]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 411,
+    "id": 357,
     "paragraph": "Patrick K, Wade R, Goulden N, Mitchell C, Moorman AV, Rowntree C, Jenkinson S, Hough R, Vora \nA. Outcome for children and young people with Early T-cell precursor acute lymphoblastic \nleukaemia treated on a contemporary protocol, UKALL 2003. Br J Haematol. 2014; 166:421–424. \n[PubMed: 24708207]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 412,
+    "id": 358,
     "paragraph": "Riemke P, Czeh M, Fischer J, Walter C, Ghani S, Zepper M, Agelopoulos K, Lettermann S, Gebhardt \nML, Mah N, Weilemann A, Grau M, Groning V, Haferlach T, Lenze D, Delwel R, Prinz M, \nAndrade-Navarro MA, Lenz G, Dugas M, Muller-Tidow C, Rosenbauer F. Myeloid leukemia with \ntransdifferentiation plasticity developing from T-cell progenitors. EMBO J. 2016; 35:2399–2416. \n[PubMed: 27572462]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 413,
+    "id": 359,
     "paragraph": "Tosello V, Mansour MR, Barnes K, Paganin M, Sulis ML, Jenkinson S, Allen CG, Gale RE, Linch DC, \nPalomero T, Real P, Murty V, Yao X, Richards SM, Goldstone A, Rowe J, Basso G, Wiernik PH, \nPaietta E, Pieters R, Horstmann M, Meijerink JP, Ferrando AA. WT1 mutations in T-ALL. Blood. \n2009; 114:1038–1045. [PubMed: 19494353]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 414,
+    "id": 360,
     "paragraph": "Moerloose B, Philippe J, Gonzalez-Garcia S, Toribio ML, Taghon T, Zuurbier L, Cauwelier B, \nHarrison CJ, Schwab C, Pisecker M, Strehl S, Langerak AW, Gecz J, Sonneveld E, Pieters R, \nPaietta E, Rowe JM, Wiernik PH, Benoit Y, Soulier J, Poppe B, Yao X, Cordon-Cardo C, \nMeijerink J, Rabadan R, Speleman F, Ferrando A. PHF6 mutations in T-cell acute lymphoblastic \nleukemia. Nat Genet. 2010; 42:338–342. [PubMed: 20228800]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 415,
+    "id": 361,
     "paragraph": "Van Vlierberghe P, Ambesi-Impiombato A, Perez-Garcia A, Haydu JE, Rigo I, Hadler M, Tosello V, \nDella Gatta G, Paietta E, Racevskis J, Wiernik PH, Luger SM, Rowe JM, Rue M, Ferrando AA. \nETV6 mutations in early immature human T cell leukemias. J Exp Med. 2011a; 208:2571–2579. \n[PubMed: 22162831]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 416,
+    "id": 362,
     "paragraph": "Fernandez HF, Tallman MS, Paietta E, Melnick A, Vandenberghe P, Speleman F, Aifantis I, Cools \nJ, Levine R, Ferrando A. PHF6 mutations in adult acute myeloid leukemia. Leukemia. 2011b; \n25:130–134. [PubMed: 21030981]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 417,
+    "id": 363,
     "paragraph": "Zhang J, Ding L, Holmfeldt L, Wu G, Heatley SL, Payne-Turner D, Easton J, Chen X, Wang J, Rusch \nM, Lu C, Chen SC, Wei L, Collins-Underwood JR, Ma J, Roberts KG, Pounds SB, Ulyanov A, \nBecksfort J, Gupta P, Huether R, Kriwacki RW, Parker M, McGoldrick DJ, Zhao D, Alford D, \nEspy S, Bobba KC, Song G, Pei D, Cheng C, Roberts S, Barbato MI, Campana D, Coustan-Smith \nE, Shurtleff SA, Raimondi SC, Kleppe M, Cools J, Shimano KA, Hermiston ML, Doulatov S, \nEppert K, Laurenti E, Notta F, Dick JE, Basso G, Hunger SP, Loh ML, Devidas M, Wood B,",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 418,
+    "id": 364,
     "paragraph": "Winter S, Dunsmore KP, Fulton RS, Fulton LL, Hong X, Harris CC, Dooling DJ, Ochoa K, \nJohnson KJ, Obenauer JC, Evans WE, Pui CH, Naeve CW, Ley TJ, Mardis ER, Wilson RK, \nDowning JR, Mullighan CG. The genetic basis of early T-cell precursor acute lymphoblastic \nleukaemia. Nature. 2012; 481:157–163. [PubMed: 22237106]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 419,
+    "id": 365,
     "paragraph": "Zuurbier L, Gutierrez A, Mullighan CG, Cante-Barrett K, Gevaert AO, de Rooi J, Li Y, Smits WK, \nBuijs-Gladdines JG, Sonneveld E, Look AT, Horstmann M, Pieters R, Meijerink JP. Immature \nMEF2C-dysregulated T-cell leukemia patients have an early T-cell precursor acute lymphoblastic \nleukemia gene signature and typically have non-rearranged T-cell receptors. Haematologica. 2014; \n99:94–102. [PubMed: 23975177]",
     "jurnal": "nihms934397.pdf"
   },
   {
-    "id": 420,
+    "id": 366,
     "paragraph": "ABSTRACT\nObjective: To evaluate a PCR based method of polyacrylamide gel electrophoresis of short tandem repeats and its \nquantification for detecting donor chimerism after haematopoietic stem cell transplantation in acute leukaemias.\nMethods: The descriptive  study  was conducted  at  Genetic  Resource Centre  (GRC)  Lab  Rawalpindi  from Feb 2018  - \nNov 2020. A total of twenty patients with acute leukaemias having undergone HSCT were selected and assessed for \nthe analysis of chimerism status. DNA extraction from the whole blood was done by chelex method and short tandem \nrepeats were amplified by using conventional STR- PCR assay. Electrophoresis was carried out and 6% polyacrylamide \ngels  were  used  for  the  resultant  amplified  DNA  products  and  then  followed  by  their  densitometry.  These  patients \nhad undergone HSCT from Pakistan Institute of Medical Science and Armed Forces Bone Marrow Transplant Centre. \nResults: The peaks in the PAGE densitometry represented the donor chimerism in all post transplant samples of the \npatients. \nConclusion: Our study showed that densitometry of STR PCR PAGE is a useful and cheaper method for demonstration \nof donor chimerism in acute leukaemia patients having undergone HSCT. Hence this method can be a valuable option \nin the monitoring of chimerism status in these patients and therefore helps in preventing graft failure by fast and early \ntreatment strategies for these patients.",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 421,
+    "id": 367,
     "paragraph": "Short \n(STRs),  also  known  as \nMicrosatellites  are  small  sequences  of  DNA  (two  to  six \nbase pairs) which are tandemly repeated and these repeat \nunits  are  different  among  individuals,  making  them \nhighly distinguishable1 and are highly useful and widely \nused in human identity testing applications.2,3",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 422,
+    "id": 368,
     "paragraph": "Analysis of short tandem repeats (STR-PCR) is thought \nto be the standard PCR based assay for detection of chi-\nmerism4 Chimerism refers to the presence of mixture of \nDNA of both the donor and recipient after a hematopoi-\netic stem cell transplant as HSCT has been widely used \nfor  the  cure  of    patients  suffering  from  malignant  and \nnonmalignant  hematological  disorders  and  considered.5 \nNevertheless  testing  of  hematopoietic  chimerism  influ-\nences  clinical  decision  and  therapeutic  intervention  in \npatients  after  haematopoietic  stem  cell  transplantation \nbut HSCT may get failed due to relapse, and graft-versus-\nhost  disease  (GVHD).6 Estimation  of  chimerism  pattern \nhas a central  part in monitoring of patients having un-\ndergone stem cell transplant 7  and short tandem repeats \n(STR-PCR) are considered the standard PCR based meth-\nod for detecting chimerism.8 The method of STR-PCR us-\ning a genetic analyzer is sensitive but costly. \n  The  analysis  of  polyacrylamide  gel  electrophoresis \nwith  subsequent  densitometric  quantification  of  the \nDNA fragments is another alternative which is cheaper \nthan the use of genetic analyzer.9 PCR of short tandem \nrepeats using PAGE by genetic analyzer is having lesser \nsensitivity  with  high  coefficient  of  variation.10  The \ntroubles  most  likely  faced  using  genetic  analyzer  are",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 423,
+    "id": 369,
     "paragraph": "the artifacts of polymerase slippages i.e stutter peaks, \nultimately  interfering  with  the  analysis  of  chimerism \npattern.11\n  Hence by analyzing the samples of peripheral blood \nor bone marrow of the recipient over time may help in \ndetecting  the  patterns  of  Chimerism  by  conventional \nSTR-PCR  PAGE  after  a  stem  cell  transplant  in  several \nmalignant  and  non-malignant  hematological  diseases. \nTherefore  a  continuous  monitoring  of  chimerism  is \nof  primary  importance  in  the  effective  tailoring  of  the \ntreatment  strategies  wherever  required.12  This  paper \nprovides  a  simple,  reliable  and  successful  use  of  STR-\nPCR  by  densitometric  evaluation  of  donor  chimerism \npattern in acute leukaemias.",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 424,
+    "id": 370,
     "paragraph": "Fig.1:  Silver  stained  polyacrylamide  gel  electrophoresis  of  STR \nPCR  at  D5S818  locus.  Lane  1  shows  two  distinct  alleles  in  the \nrecipient pre-transplant sample. Lane 2 shows two alleles of the \nsame size (homozygous) appearing as a single thick band in the \ndonor sample. Lane 3 shows the recipient post-transplant sample \nwith two alleles but the intensity of the shorter allele (lower band) \nis significantly less than the larger allele (upper band). The reap-\npearance of the recipient specific allele (lower band) indicates a \nreappearance of the recipient’s tissue (decreasing chimerism).",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 425,
+    "id": 371,
     "paragraph": "Fig.2: Silver stained polyacrylamide gel electrophoresis \nof STR PCR at D3S1358 locus. Lane 1 shows two closely \npacked  alleles  in  the  recipient  pre-transplant  sample. \nLane 2 shows two distinct alleles in the donor sample. \nLanes 3 & 4 show the recipient post-transplant samples \nwith three alleles. The middle allele (indicated by arrow) \nis the recipient’s exclusive allele. Its reappearance in the \npost-transplant  sample  indicates  a  reappearance  of  the \nrecipient’s tissue (decreasing chimerism).",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 426,
+    "id": 372,
     "paragraph": "Currently  Haematopoietic  stem  cell  transplant  is \nconsidered to be an effective and efficient therapeutic \nstrategy \nhematologic \nmalignancies, but alongwith is compounded by  various \ncomplications,  such  as  disease  recurrence,  toxicity \nrelated to treatment related toxicity, Graft rejection and \nGVHD.13  The  main  cause  of  failure  of  haematopoietic \nstem  cell  transplant  is  relapse  inspite  of  continuous \nimprovement  in  this  therapeutic  modality  especially \nin  patients  with  acute  leukemia.  As  recommended \nby  EuroChimerism  consortium  PCR  analysis  of  STR \nis  the  standard  method  for  estimation  of  quantitative \nchimerism in the prediction of relapses.14",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 427,
+    "id": 373,
     "paragraph": "their study of 230 patients of malignant hematological \ndisorders found out that five STR informative markers \nwere  able  to  find  chimerism  in  all  patients  except  ten \npatients  who  deceased  and  also  suggested  that  STR \nis  more  informative  in  detecting  mixed  chimerism \nas  compared  to  other  method.22  A  Japanese  study \nsuggested  that  using  20  STR  markers  and  the  KMR \nkit markers the informativity in donor/recipient pairs \nfor estimation of chimerism may be detected in a large \nvariety of donor/recipient pairs.23 \n  Few  researchers  have  suggested  that  at  least  40 \nmarkers  are  required  to  discriminate  a  large  number \nof the donor recipient pairs.  24 A group of researchers \nin  their  study  have  observed  the  status  of  chimerism \nby using STR markers in 39 donor/recipient pairs and \nfound chimerism in all the pairs.25",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 428,
+    "id": 374,
     "paragraph": "19.  Pedini P,  Cherouat N , Basire A , Simon S, Budon L , Pourtein M et \nal. Evaluation of next-generation sequencing and crystal digital PCR \nfor  chimerism  monitoring  of  post-allogeneic  hematopoietic  stem  cell \ntransplantation. Transplant Cell Ther. 2021; 27, 89.e1-89.e10",
     "jurnal": "PJMS-40-875.pdf"
   },
   {
-    "id": 429,
+    "id": 375,
     "paragraph": "23.  Tyler, J., Kumer, L., Fisher, C., Casey, H. & Shike, H. Personalized chi-\nmerism test that uses selection of short tandem repeat or quantitative \nPCR depending on patient’s chimerism status. J. Mol. Diagn. 2019; 21: \n483–490",
     "jurnal": "PJMS-40-875.pdf"
   }

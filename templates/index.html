@@ -366,6 +366,14 @@
                 align-items: flex-start;
             }
         }
+
+        /* Highlighted Text */
+        mark {
+            background-color: #fff59d;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -465,7 +473,7 @@
                 {% if r.summary %}
                 <div class="summary">
                     <h4><i class="fas fa-file-contract"></i> AI-Generated Summary</h4>
-                    <p>{{ r.summary }}</p>
+                    <p>{{ r.summary | safe }}</p>
                 </div>
                 {% endif %}
 
@@ -474,7 +482,7 @@
                         <i class="fas fa-chevron-down"></i> View Full Paragraph ({{ r.paragraph|length }} characters)
                     </summary>
                     <div class="text-content">
-                        {{ r.paragraph }}
+                        {{ r.paragraph | safe }}
                     </div>
                 </div>
             </div>
