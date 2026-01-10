@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, send_file
 from ir.search import search
 import os
 import sys
+import json
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
@@ -43,16 +44,31 @@ def get_pdf_filename_from_jurnal(jurnal_name):
     # Jika jurnal sudah berupa nama file PDF
     if jurnal_name.lower().endswith('.pdf'):
         return jurnal_name
-    
+
     # Coba cari PDF dengan nama yang mirip
     pdf_files = get_pdf_files()
     for pdf in pdf_files:
         # Cek apakah nama file mengandung nama jurnal
         if jurnal_name.lower() in pdf.lower():
             return pdf
-    
+
     # Jika tidak ditemukan, return yang pertama
     return pdf_files[0] if pdf_files else None
+
+def get_total_paragraphs():
+    """
+    Hitung total paragraf hasil processing
+    """
+    path = os.path.join(PROCESSED_FOLDER, "paragraphs.json")
+    if not os.path.exists(path):
+        return 0
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    return len(data)
+
+
 
 # =========================
 # ROUTE: SEARCH
@@ -69,11 +85,11 @@ def index():
             try:
                 # Get search results - remove limit
                 search_results = search(query, top_k=50)
-                
+
                 # Enrich results with PDF information
                 for i, result in enumerate(search_results):
                     result['rank'] = i + 1
-                    
+
                     # Get PDF filename from jurnal field
                     jurnal_name = result.get('jurnal', '')
                     if jurnal_name:
@@ -83,15 +99,15 @@ def index():
                     else:
                         result['pdf_filename'] = "Unknown"
                         result['view_url'] = "#"
-                
+
                 results = search_results
-                
+
             except Exception as e:
                 error = f"Search error: {str(e)}"
                 print(f"Search error: {e}")
 
     papers_count = len(get_pdf_files())
-    
+
     return render_template(
         "index.html",
         results=results,
@@ -106,7 +122,10 @@ def index():
 @app.route("/manage-pdf")
 def manage_pdf():
     files = get_pdf_files()
-    return render_template("manage_pdf.html", files=files)
+    total_paragraphs = get_total_paragraphs()
+    return render_template("manage_pdf.html", files=files, total_paragraphs=total_paragraphs)
+
+
 
 # =========================
 # ROUTE: UPLOAD
@@ -149,10 +168,10 @@ def view_pdf(filename):
     """Simple PDF viewer"""
     filename = secure_filename(filename)
     path = os.path.join(PDF_FOLDER, filename)
-    
+
     if not os.path.exists(path):
         return "File not found", 404
-    
+
     return send_file(
         path,
         mimetype="application/pdf",
@@ -175,5 +194,5 @@ if __name__ == "__main__":
     print("Starting Leukemia Research IR System...")
     print(f"PDF folder: {PDF_FOLDER}")
     print(f"PDF files: {len(get_pdf_files())}")
-    
+
     app.run(debug=True, port=5000)
