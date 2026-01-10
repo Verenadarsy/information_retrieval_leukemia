@@ -648,15 +648,7 @@
                 </div>
                 
                 <div class="pdf-actions">
-                    {% if r.pdf_filename and r.pdf_filename != 'Unknown' %}
-                    <!-- Open in New Tab -->
-                    <a href="/pdf/{{ r.pdf_filename }}" 
-                       target="_blank" 
-                       class="btn-pdf btn-view"
-                       title="Open PDF in new tab">
-                        <i class="fas fa-external-link-alt"></i> Open PDF
-                    </a>
-                    
+                    {% if r.pdf_filename and r.pdf_filename != 'Unknown' %}                    
                     <!-- View in Modal -->
                     <button class="btn-pdf btn-modal" 
                             onclick="openPDFModal('{{ r.pdf_filename }}')"
